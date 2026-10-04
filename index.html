@@ -158,21 +158,16 @@
       <article class="threat-card"><small>CISA KEV</small><strong id="kevTotal">—</strong><span>Known exploited vulnerabilities</span></article>
       <article class="threat-card critical"><small>CRITICAL THREATS</small><strong id="criticalTotal">—</strong><span>Threats under active exploitation</span></article>
       <article class="threat-card"><small>ACTIVE CVEs</small><strong id="activeCves">—</strong><span>Tracked with patch deadlines</span></article>
-      <article class="threat-card"><small>RANSOMWARE</small><strong id="ransomwareTotal">—</strong><span>Known ransomware-linked threats</span></article>
-      <article class="threat-card"><small>THREAT VECTORS</small><strong id="vectorTotal">—</strong><span>Categories currently tracked</span></article>
     </div>
 
     <div class="threat-bottom">
       <div class="threat-panel">
-        <div class="panel-head"><div><small>RECENT THREAT ACTIVITY</small><h3>What is being tracked now</h3></div><span class="live-pill">LIVE</span></div>
-        <div id="threatFeed" class="threat-feed"><div class="feed-loading"><span></span><span></span><span></span></div></div>
+        <div class="panel-head"><div><small>RECENT THREAT ACTIVITY</small><h3>The 10 newest threats</h3></div><span class="live-pill">LIVE</span></div>
+        <div id="newThreats" class="threat-feed threat-records" aria-live="polite"><div class="feed-loading"><span></span><span></span><span></span></div></div>
       </div>
-      <div class="threat-panel radar-panel">
-        <div class="panel-head"><div><small>THREAT LEVEL</small><h3>Global exposure snapshot</h3></div><span id="threatLevel" class="level-pill">ELEVATED</span></div>
-        <div class="threat-meter"><div id="threatMeterFill"></div></div>
-        <div class="meter-labels"><span>LOW</span><span>GUARDED</span><span>ELEVATED</span><span>HIGH</span><span>CRITICAL</span></div>
-        <p class="meter-note">The indicator reflects the current feed's threat-level signal. Your actual organisational risk depends on your technology stack, exposure and controls.</p>
-        <a class="text-link" href="#contact">Need help reducing exposure? →</a>
+      <div class="threat-panel">
+        <div class="panel-head"><div><small>CISA KNOWN EXPLOITED VULNERABILITIES</small><h3>Latest CISA Known 10 Exploited Vulnerabilities</h3></div><span class="live-pill">CISA KEV</span></div>
+        <div id="kevThreats" class="threat-feed threat-records" aria-live="polite"><div class="feed-loading"><span></span><span></span><span></span></div></div>
       </div>
     </div>
   </div>
