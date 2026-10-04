@@ -5,7 +5,7 @@ document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>
 document.getElementById('contactForm')?.addEventListener('submit',e=>{
  e.preventDefault(); const d=new FormData(e.target);
  const subject=encodeURIComponent(`TechBiz Secure enquiry - ${d.get('interest')||'Security consultation'}`);
- const body=encodeURIComponent(`Name: ${d.get('name')}\\nBusiness email: ${d.get('email')}\\nCompany: ${d.get('company')||'Not provided'}\\nInterest: ${d.get('interest')||'Not specified'}\\n\\nRequirement:\\n${d.get('message')}`);
+ const body=encodeURIComponent(`Name: ${d.get('name')}\nBusiness email: ${d.get('email')}\nCompany: ${d.get('company')||'Not provided'}\nInterest: ${d.get('interest')||'Not specified'}\n\nRequirement:\n${d.get('message')}`);
  location.href=`mailto:TBS@TechBizSecure.com?subject=${subject}&body=${body}`;
 });
 
