@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="TechBiz Secure — cybersecurity engineering for cloud, identity, endpoints, applications and AI.">
   <meta name="theme-color" content="#050816">
+  <!-- Browser security hardening -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               base-uri 'self';
+               object-src 'none';
+               script-src 'self';
+               style-src 'self' https://fonts.googleapis.com;
+               font-src https://fonts.gstatic.com;
+               img-src 'self' data:;
+               connect-src 'self' https://livecve.com;
+               frame-src 'none';
+               worker-src 'none';
+               media-src 'none';
+               manifest-src 'self';
+               form-action 'none';
+               upgrade-insecure-requests">
+
+<meta name="referrer" content="strict-origin-when-cross-origin">
   <meta property="og:title" content="TechBiz Secure | Cybersecurity Engineering">
   <meta property="og:description" content="Practical cybersecurity engineering for modern businesses.">
   <meta property="og:type" content="website">
