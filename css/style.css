@@ -22,3 +22,23 @@ footer{border-top:1px solid var(--line);padding:30px 0}.footer{display:flex;alig
 .radar-panel{padding-bottom:25px}.threat-meter{height:12px;margin:45px 25px 10px;border-radius:20px;background:#101b2e;border:1px solid #1c2b44;overflow:hidden}.threat-meter div{height:100%;width:56%;border-radius:20px;background:linear-gradient(90deg,var(--cyan),#8de9c0,var(--amber));box-shadow:0 0 18px rgba(33,212,242,.2);transition:width .5s ease}.meter-labels{display:flex;justify-content:space-between;padding:0 25px;color:#4e607a;font:700 7px "Space Grotesk";letter-spacing:.7px}.meter-note{margin:38px 25px 20px;color:#70829d;font-size:11px;line-height:1.7}.radar-panel .text-link{margin:0 25px}
 @media(max-width:1050px){.threat-cards{grid-template-columns:repeat(3,1fr)}.threat-bottom{grid-template-columns:1fr}.threat-card{min-height:135px}}
 @media(max-width:650px){.threat-cards{grid-template-columns:1fr 1fr}.threat-card{min-height:125px;padding:18px}.threat-card strong{font-size:29px}.threat-intro p{font-size:13px}.panel-head{padding:19px}.threat-feed{padding:6px 19px}.meter-labels{padding:0 19px;font-size:6px}.threat-meter{margin-left:19px;margin-right:19px}.meter-note{margin-left:19px;margin-right:19px}.radar-panel .text-link{margin-left:19px}}
+/* Security-hardened threat meter states */
+.threat-meter div.level-low {
+  width: 10%;
+}
+
+.threat-meter div.level-guarded {
+  width: 32%;
+}
+
+.threat-meter div.level-elevated {
+  width: 56%;
+}
+
+.threat-meter div.level-high {
+  width: 78%;
+}
+
+.threat-meter div.level-critical {
+  width: 96%;
+}
