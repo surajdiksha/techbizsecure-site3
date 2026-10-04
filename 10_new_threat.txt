@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-10-04T12:45:23+00:00",
-    "next_update": "2026-10-05T12:45:23+00:00",
-    "total": 97,
+    "generated_at": "2026-10-04T19:21:17+00:00",
+    "next_update": "2026-10-05T19:21:17+00:00",
+    "total": 107,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 39,
-        "kev_total": 1733,
+        "critical_total": 42,
+        "kev_total": 1734,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -17,18 +17,6 @@
         ]
     },
     "threats": [
-        {
-            "title": "CVE-2026-105135",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure",
-            "cve": "CVE-2026-105135",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-04T07:16:33.693",
-            "fromNVD": true
-        },
         {
             "title": "CVE-2026-88773",
             "severity": "critical",
@@ -39,18 +27,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-09-27T17:16:56.507",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-105134",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve",
-            "cve": "CVE-2026-105134",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-04T07:16:33.480",
             "fromNVD": true
         },
         {
@@ -66,6 +42,18 @@
             "fromNVD": true
         },
         {
+            "title": "CVE-2026-101077",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in Netcore NR289-GE 1.4.5102. This impacts the function process_request of the component boa_temp Handler. This manipulation causes missing authentication. The attack is possible to be carried out remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+            "cve": "CVE-2026-101077",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-09-28T16:17:12.143",
+            "fromNVD": true
+        },
+        {
             "title": "CVE-2026-101072",
             "severity": "critical",
             "category": "vulnerability",
@@ -78,15 +66,27 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-101077",
+            "title": "CVE-2026-105135",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A flaw has been found in Netcore NR289-GE 1.4.5102. This impacts the function process_request of the component boa_temp Handler. This manipulation causes missing authentication. The attack is possible to be carried out remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-            "cve": "CVE-2026-101077",
+            "summary": "A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure",
+            "cve": "CVE-2026-105135",
             "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-09-28T16:17:12.143",
+            "ts": "2026-10-04T07:16:33.693",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-105134",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve",
+            "cve": "CVE-2026-105134",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-04T07:16:33.480",
             "fromNVD": true
         },
         {
@@ -114,17 +114,16 @@
             "fromNVD": true
         },
         {
-            "title": "Cl0p MOVEit Data Extortion",
+            "title": "CVE-2026-88775",
             "severity": "critical",
-            "category": "ransomware",
-            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
-            "cve": "CVE-2023-34362",
-            "affected": "MOVEit Transfer / GoAnywhere",
-            "source": "Mandiant",
-            "ts": "Active 2025",
+            "category": "vulnerability",
+            "summary": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
+            "cve": "CVE-2026-88775",
             "score": 9.8,
-            "fromKEV": true,
-            "ransomware": true
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-09-27T17:16:56.750",
+            "fromNVD": true
         },
         {
             "title": "CVE-2026-82042",
@@ -139,5 +138,5 @@
             "fromNVD": true
         }
     ],
-    "docs": "https://livecve.com/livecve/api-docs"
+    "docs": "https://livecve.com/api-docs"
 }
