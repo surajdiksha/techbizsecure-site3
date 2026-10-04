@@ -42,3 +42,9 @@ footer{border-top:1px solid var(--line);padding:30px 0}.footer{display:flex;alig
 .threat-meter div.level-critical {
   width: 96%;
 }
+
+
+/* Keep the threat meter empty when the feed has no verified current reading. */
+.threat-meter div.level-unavailable {
+  width: 0;
+}
