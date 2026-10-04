@@ -1,0 +1,143 @@
+{
+    "ok": true,
+    "generated_at": "2026-10-04T12:45:23+00:00",
+    "next_update": "2026-10-05T12:45:23+00:00",
+    "total": 97,
+    "returned": 10,
+    "offset": 0,
+    "limit": 10,
+    "filters": [],
+    "meta": {
+        "critical_total": 39,
+        "kev_total": 1733,
+        "sources": [
+            "CISA KEV",
+            "NVD/NIST",
+            "Curated Intel DB"
+        ]
+    },
+    "threats": [
+        {
+            "title": "CVE-2026-105135",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure",
+            "cve": "CVE-2026-105135",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-04T07:16:33.693",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-88773",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
+            "cve": "CVE-2026-88773",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-09-27T17:16:56.507",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-105134",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve",
+            "cve": "CVE-2026-105134",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-04T07:16:33.480",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-102427",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Joomla Extension - ordasoft.com - Unauthenticated Remote Code Execution in OrdaSoft Joomla CCK < 8.3.16 - site/uploader.php is reached through the component’s normal frontend routing (task=getContent), a task with no authentication or ACL check anywhere in the dispatch chain. The handler validates the uploaded file’s content with a real magic-byte MIME check, but the extension allow-list that ",
+            "cve": "CVE-2026-102427",
+            "score": 10,
+            "affected": "PHP",
+            "source": "NVD/NIST",
+            "ts": "2026-09-30T16:17:06.623",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-101072",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was identified in Netcore NR289-GE 1.4.5102. This issue affects the function system of the file /ap_ip.cgi of the component CGI Handler. Such manipulation of the argument ip leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+            "cve": "CVE-2026-101072",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-09-28T14:17:13.973",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-101077",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in Netcore NR289-GE 1.4.5102. This impacts the function process_request of the component boa_temp Handler. This manipulation causes missing authentication. The attack is possible to be carried out remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+            "cve": "CVE-2026-101077",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-09-28T16:17:12.143",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-82041",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "UTMStack before 11.2.16 contains a missing authorization vulnerability in UTMIncidentCommandWebsocket.processCommand(), the handler mapped to the /command/{hostname} STOMP destination, where no role check or command allowlist is applied before forwarding supplied commands. Any authenticated user, regardless of role, can send arbitrary operating-system commands over gRPC to any connected agent, res",
+            "cve": "CVE-2026-82041",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-02T21:16:56.497",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-101038",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was determined in FAST FAC1200R 5.0_20201119_1.0.2. Affected by this vulnerability is the function MmtAtePrase of the component MmtAtePrase Parser. This manipulation causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond i",
+            "cve": "CVE-2026-101038",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-09-28T11:16:43.423",
+            "fromNVD": true
+        },
+        {
+            "title": "Cl0p MOVEit Data Extortion",
+            "severity": "critical",
+            "category": "ransomware",
+            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
+            "cve": "CVE-2023-34362",
+            "affected": "MOVEit Transfer / GoAnywhere",
+            "source": "Mandiant",
+            "ts": "Active 2025",
+            "score": 9.8,
+            "fromKEV": true,
+            "ransomware": true
+        },
+        {
+            "title": "CVE-2026-82042",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "UTMStack before 11.2.16 contains an authentication bypass vulnerability that allows remote attackers to gain full administrative API access by presenting a valid Utm-Internal-Key header matching the INTERNAL_KEY environment variable value, which the InternalApiKeyFilter accepts for any endpoint without path restriction, constant-time comparison, rate limiting, or audit logging. Attackers who obtai",
+            "cve": "CVE-2026-82042",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-02T21:16:56.643",
+            "fromNVD": true
+        }
+    ],
+    "docs": "https://livecve.com/livecve/api-docs"
+}
