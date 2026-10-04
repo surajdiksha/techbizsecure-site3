@@ -92,13 +92,8 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
       $('kevTotal').textContent = showValue(summary.kev_total);
       $('criticalTotal').textContent = showValue(summary.critical);
       $('activeCves').textContent = showValue(summary.cves_tracked);
-      $('threatStatus').textContent = 'Live intelligence snapshot loaded';
-      const stamp = data.generated_at || summary.generated_at || data.updated_at;
-      $('threatUpdated').textContent = stamp ? `Updated ${new Date(stamp).toLocaleString([], {dateStyle:'medium',timeStyle:'short'})}` : 'Refreshes every 10 minutes';
     } catch {
       $('kevTotal').textContent = $('criticalTotal').textContent = $('activeCves').textContent = '—';
-      $('threatStatus').textContent = 'Threat count snapshot unavailable';
-      $('threatUpdated').textContent = 'Waiting for the scheduled feed update';
     }
   }
   async function loadThreats() {
