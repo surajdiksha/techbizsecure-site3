@@ -138,5 +138,5 @@
             "fromNVD": true
         }
     ],
-    "docs": "https://livecve.com/api-docs"
+    "docs": "https://livecve.com/livecve/api-docs"
 }
