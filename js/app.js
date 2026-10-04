@@ -51,6 +51,11 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
     el.textContent = message;
     target.replaceChildren(el);
   }
+  function fitFirstRecord(target) {
+    const first = target.querySelector('.threat-record');
+    if (!first) { target.style.maxHeight = ''; return; }
+    target.style.maxHeight = `${Math.ceil(first.getBoundingClientRect().height) + 8}px`;
+  }
   function renderRecords(target, records, keys, titleKey) {
     target.replaceChildren();
     if (!records.length) return showError(target,'No records are available in the latest snapshot.');
@@ -74,7 +79,11 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
       article.append(heading,details);
       target.append(article);
     }
+    requestAnimationFrame(() => fitFirstRecord(target));
   }
+  const feedWindows = [ $('newThreats'), $('kevThreats') ].filter(Boolean);
+  addEventListener('resize', () => feedWindows.forEach(target => fitFirstRecord(target)));
+  if (document.fonts?.ready) document.fonts.ready.then(() => feedWindows.forEach(target => fitFirstRecord(target)));
   async function loadCounts() {
     try {
       const data = await readSnapshot('just_the_counts.txt');
