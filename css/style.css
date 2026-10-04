@@ -48,3 +48,18 @@ footer{border-top:1px solid var(--line);padding:30px 0}.footer{display:flex;alig
 .threat-meter div.level-unavailable {
   width: 0;
 }
+
+/* Threat snapshots */
+.threat-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+.threat-bottom{grid-template-columns:1fr}
+.threat-records{padding-top:0;padding-bottom:8px}
+.feed-item.threat-record{display:block;padding:24px 0}
+.threat-record h4{font-size:16px;line-height:1.45;margin:0 0 17px;color:#eff7ff}
+.threat-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.threat-field{min-width:0;padding:11px 12px;border:1px solid rgba(150,170,200,.1);border-radius:8px;background:rgba(14,25,45,.48)}
+.threat-field.wide{grid-column:span 2}
+.threat-field dt{font:700 8px "Space Grotesk";letter-spacing:.9px;color:#647995;text-transform:uppercase;margin-bottom:5px}
+.threat-field dd{font-size:11px;line-height:1.6;color:#aebdd1;overflow-wrap:anywhere;white-space:pre-wrap}
+@media(max-width:800px){.threat-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.threat-cards{grid-template-columns:1fr 1fr}.threat-field.wide{grid-column:span 2}.threat-record h4{font-size:14px}}
+@media(max-width:420px){.threat-fields{grid-template-columns:1fr}.threat-field.wide{grid-column:auto}}
