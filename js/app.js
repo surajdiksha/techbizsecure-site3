@@ -30,8 +30,6 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
     return fallback;
   };
   const arr = data => Array.isArray(data) ? data : (Array.isArray(data?.threats) ? data.threats : Array.isArray(data?.data) ? data.data : Array.isArray(data?.results) ? data.results : []);
-  const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-  const num = v => { const n = Number(v); return Number.isFinite(n) ? n : null; };
 
   function render(data) {
     const threats = arr(data);
@@ -56,24 +54,31 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
     $('ransomwareTotal').textContent = safe(ransomware ?? (derivedRansom || null));
     $('vectorTotal').textContent = safe(vectors ?? (new Set(threats.map(t => first(t,['category','type','vector'], '')).filter(Boolean)).size || null));
 
-    const level = String(first(summary,['threat_level','threatLevel','level'], 'ELEVATED')).toUpperCase();
+    const levelNames = new Set(['LOW', 'GUARDED', 'ELEVATED', 'HIGH', 'CRITICAL']);
+    const requestedLevel = String(first(summary,['threat_level','threatLevel','level'], 'ELEVATED')).toUpperCase();
+    const level = levelNames.has(requestedLevel) ? requestedLevel : 'ELEVATED';
     $('threatLevel').textContent = level;
-    const levels = {LOW:10,GUARDED:32,ELEVATED:56,HIGH:78,CRITICAL:96};
     const meter = $('threatMeterFill');
-    meter.className = `level-${String(level).toLowerCase()}`;
-
-    const items = threats.slice(0, 6);
-    const feed = $('threatFeed');
+    meter.className = `level-${level.toLowerCase()}`;
+    const severityClasses = new Set(['critical', 'high', 'medium', 'low', 'info']);
+    const items = threats.slice(0, 6), feed = $('threatFeed');
+    feed.replaceChildren();
     if (!items.length) {
-      feed.innerHTML = '<div class="feed-empty">Live feed connected, but no individual threat records were returned.</div>';
-    } else {
-      feed.innerHTML = items.map(t => {
-        const title = first(t,['title','name','headline','cve','id'],'Threat intelligence update');
-        const severity = sev(t) || 'INFO';
-        const desc = first(t,['description','summary','brief','details'],'Current threat intelligence item');
-        const category = first(t,['category','type','vector'],'THREAT');
-        return `<article class="feed-item"><div class="feed-severity ${severity.toLowerCase()}">${esc(severity)}</div><div class="feed-copy"><h4>${esc(title)}</h4><p>${esc(String(desc).slice(0,170))}${String(desc).length > 170 ? '…' : ''}</p><small>${esc(category)}</small></div></article>`;
-      }).join('');
+      const empty = document.createElement('div'); empty.className = 'feed-empty';
+      empty.textContent = 'Live feed connected, but no individual threat records were returned.'; feed.append(empty);
+    } else for (const t of items) {
+      const title = first(t,['title','name','headline','cve','id'],'Threat intelligence update');
+      const severity = sev(t) || 'INFO';
+      const severityClass = severityClasses.has(severity.toLowerCase()) ? severity.toLowerCase() : 'info';
+      const description = String(first(t,['description','summary','brief','details'],'Current threat intelligence item'));
+      const category = first(t,['category','type','vector'],'THREAT');
+      const item = document.createElement('article'); item.className = 'feed-item';
+      const badge = document.createElement('div'); badge.className = `feed-severity ${severityClass}`; badge.textContent = severity.slice(0,24);
+      const copy = document.createElement('div'); copy.className = 'feed-copy';
+      const heading = document.createElement('h4'); heading.textContent = String(title).slice(0,200);
+      const paragraph = document.createElement('p'); paragraph.textContent = description.slice(0,170)+(description.length>170?'…':'');
+      const label = document.createElement('small'); label.textContent = String(category).slice(0,80);
+      copy.append(heading,paragraph,label); item.append(badge,copy); feed.append(item);
     }
     $('threatStatus').textContent = 'Live intelligence connected';
     const stamp = first(data,['updated_at','updatedAt','generated','timestamp','last_updated'],null);
@@ -91,19 +96,27 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
     $('threatMeterFill').className = 'level-elevated';
     $('threatStatus').textContent = 'Live feed temporarily unavailable — showing reference data';
     $('threatUpdated').textContent = 'Will retry automatically';
-    $('threatFeed').innerHTML = `
-      <article class="feed-item"><div class="feed-severity critical">CRITICAL</div><div class="feed-copy"><h4>Active vulnerability and attack campaigns</h4><p>The external intelligence feed is currently unavailable. The panel will retry automatically.</p><small>GLOBAL THREAT FEED</small></div></article>`;
+    const feed = $('threatFeed'), item = document.createElement('article');
+    item.className='feed-item';
+    const badge=document.createElement('div'); badge.className='feed-severity critical'; badge.textContent='CRITICAL';
+    const copy=document.createElement('div'); copy.className='feed-copy';
+    const heading=document.createElement('h4'); heading.textContent='Active vulnerability and attack campaigns';
+    const paragraph=document.createElement('p'); paragraph.textContent='The external intelligence feed is currently unavailable. The panel will retry automatically.';
+    const label=document.createElement('small'); label.textContent='GLOBAL THREAT FEED';
+    copy.append(heading,paragraph,label); item.append(badge,copy); feed.replaceChildren(item);
   }
 
+  let requestInProgress=false;
   async function loadThreats() {
+    if(requestInProgress)return;
+    requestInProgress=true;
+    const controller=new AbortController(), timeout=setTimeout(()=>controller.abort(),10000);
     try {
-      const response = await fetch(`${API}?_=${Date.now()}`, {cache:'no-store',mode:'cors'});
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
-      render(data);
-    } catch (e) {
-      fallback();
-    }
+      const response=await fetch(API+'?_='+Date.now(),{cache:'no-store',mode:'cors',signal:controller.signal});
+      if(!response.ok)throw new Error('HTTP '+response.status);
+      render(await response.json());
+    } catch(e) { fallback(); }
+    finally { clearTimeout(timeout); requestInProgress=false; }
   }
 
   loadThreats();
