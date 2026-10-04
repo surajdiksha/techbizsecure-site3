@@ -36,8 +36,8 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
     const summary = data?.stats || data?.statistics || data?.summary || data?.metrics || data;
     const kev = first(summary, ['kev_total','kevTotal','cisa_kev_total','cisaKevTotal','kev','cisa_kev','known_exploited'], null);
     const critical = first(summary, ['critical_threats','criticalThreats','critical','critical_total','active_critical'], null);
-    const active = first(summary, ['active_cves','activeCVEs','active_cves_total','active','patch_deadlines'], null);
-    const ransomware = first(summary, ['ransomware_linked','ransomwareLinked','ransomware','ransomware_total'], null);
+    const active = first(summary, ['active_cves','activeCVEs','active_cves_total','cves_tracked','active','patch_deadlines'], null);
+    const ransomware = first(summary, ['ransomware_linked','ransomwareLinked','ransomware','ransomware_total','kev_ransomware'], null);
     const vectors = first(summary, ['threat_vectors','threatVectors','vectors','categories','category_count'], null);
 
     // If the endpoint exposes only threat records, derive useful counts from those records.
@@ -81,44 +81,44 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
       copy.append(heading,paragraph,label); item.append(badge,copy); feed.append(item);
     }
     $('threatStatus').textContent = 'Live intelligence connected';
-    const stamp = first(data,['updated_at','updatedAt','generated','timestamp','last_updated'],null);
+    const stamp = first(data,['updated_at','updatedAt','generated_at','generatedAt','generated','timestamp','last_updated'],null);
     $('threatUpdated').textContent = stamp ? `Updated ${new Date(stamp).toLocaleString([], {dateStyle:'medium',timeStyle:'short'})}` : 'Auto-refresh enabled';
   }
 
   function fallback() {
-    // Reference values from the current public feed snapshot, used only if the live request is unavailable.
-    $('kevTotal').textContent = '3';
-    $('criticalTotal').textContent = '6';
-    $('activeCves').textContent = '3';
-    $('ransomwareTotal').textContent = '3';
-    $('vectorTotal').textContent = '5';
-    $('threatLevel').textContent = 'ELEVATED';
-    $('threatMeterFill').className = 'level-elevated';
-    $('threatStatus').textContent = 'Live feed temporarily unavailable — showing reference data';
-    $('threatUpdated').textContent = 'Will retry automatically';
+    ['kevTotal','criticalTotal','activeCves','ransomwareTotal','vectorTotal'].forEach(id => { $(id).textContent = '—'; });
+    $('threatLevel').textContent = '—';
+    $('threatMeterFill').className = 'level-unavailable';
+    $('threatStatus').textContent = 'Live feed unavailable — retrying';
+    $('threatUpdated').textContent = 'Last request failed';
     const feed = $('threatFeed'), item = document.createElement('article');
-    item.className='feed-item';
-    const badge=document.createElement('div'); badge.className='feed-severity critical'; badge.textContent='CRITICAL';
-    const copy=document.createElement('div'); copy.className='feed-copy';
-    const heading=document.createElement('h4'); heading.textContent='Active vulnerability and attack campaigns';
-    const paragraph=document.createElement('p'); paragraph.textContent='The external intelligence feed is currently unavailable. The panel will retry automatically.';
-    const label=document.createElement('small'); label.textContent='GLOBAL THREAT FEED';
-    copy.append(heading,paragraph,label); item.append(badge,copy); feed.replaceChildren(item);
+    item.className = 'feed-item';
+    const copy = document.createElement('div'); copy.className = 'feed-copy';
+    const heading = document.createElement('h4'); heading.textContent = 'Live threat data could not be loaded';
+    const paragraph = document.createElement('p'); paragraph.textContent = 'The page will retry automatically. Please refresh later if this continues.';
+    copy.append(heading, paragraph); item.append(copy); feed.replaceChildren(item);
   }
 
   let requestInProgress=false;
+  let retryDelay=60*1000;
   async function loadThreats() {
     if(requestInProgress)return;
     requestInProgress=true;
     const controller=new AbortController(), timeout=setTimeout(()=>controller.abort(),10000);
     try {
-      const response=await fetch(API+'?_='+Date.now(),{cache:'no-store',mode:'cors',signal:controller.signal});
+      const response=await fetch(API,{cache:'default',mode:'cors',signal:controller.signal});
       if(!response.ok)throw new Error('HTTP '+response.status);
-      render(await response.json());
-    } catch(e) { fallback(); }
-    finally { clearTimeout(timeout); requestInProgress=false; }
+      const data=await response.json();
+      if(data?.ok===false)throw new Error('LiveCVE reported an unsuccessful response');
+      render(data);
+      retryDelay=60*1000;
+      setTimeout(loadThreats,60*60*1000);
+    } catch(e) {
+      fallback();
+      setTimeout(loadThreats,retryDelay);
+      retryDelay=Math.min(retryDelay*2,15*60*1000);
+    } finally { clearTimeout(timeout); requestInProgress=false; }
   }
 
   loadThreats();
-  setInterval(loadThreats, 5 * 60 * 1000);
 })();
