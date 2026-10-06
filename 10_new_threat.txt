@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-10-05T02:04:38+00:00",
-    "next_update": "2026-10-06T02:04:38+00:00",
-    "total": 103,
+    "generated_at": "2026-10-05T23:47:38+00:00",
+    "next_update": "2026-10-06T23:47:38+00:00",
+    "total": 96,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 38,
+        "critical_total": 31,
         "kev_total": 1734,
         "sources": [
             "CISA KEV",
@@ -17,18 +17,6 @@
         ]
     },
     "threats": [
-        {
-            "title": "CVE-2026-105134",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve",
-            "cve": "CVE-2026-105134",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-04T07:16:33.480",
-            "fromNVD": true
-        },
         {
             "title": "CVE-2026-101077",
             "severity": "critical",
@@ -54,18 +42,6 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-101072",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was identified in Netcore NR289-GE 1.4.5102. This issue affects the function system of the file /ap_ip.cgi of the component CGI Handler. Such manipulation of the argument ip leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-            "cve": "CVE-2026-101072",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-09-28T14:17:13.973",
-            "fromNVD": true
-        },
-        {
             "title": "CVE-2026-105135",
             "severity": "critical",
             "category": "vulnerability",
@@ -78,15 +54,15 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-82041",
+            "title": "CVE-2026-101072",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "UTMStack before 11.2.16 contains a missing authorization vulnerability in UTMIncidentCommandWebsocket.processCommand(), the handler mapped to the /command/{hostname} STOMP destination, where no role check or command allowlist is applied before forwarding supplied commands. Any authenticated user, regardless of role, can send arbitrary operating-system commands over gRPC to any connected agent, res",
-            "cve": "CVE-2026-82041",
-            "score": 9.9,
+            "summary": "A vulnerability was identified in Netcore NR289-GE 1.4.5102. This issue affects the function system of the file /ap_ip.cgi of the component CGI Handler. Such manipulation of the argument ip leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+            "cve": "CVE-2026-101072",
+            "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-02T21:16:56.497",
+            "ts": "2026-09-28T14:17:13.973",
             "fromNVD": true
         },
         {
@@ -102,16 +78,41 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2023-54405",
+            "title": "CVE-2026-102489",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "H3C CVM, the Cloud Virtualization Management component of the H3C CAS cloud platform, contains an unauthenticated arbitrary file upload vulnerability in the /cas/fileUpload/upload endpoint that allows remote attackers to write arbitrary files by manipulating the caller-supplied token parameter without restricting path traversal or file type. Attackers can exploit the path traversal in the token pa",
-            "cve": "CVE-2023-54405",
+            "summary": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.",
+            "cve": "CVE-2026-102489",
             "score": 9.8,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-02T19:16:38.897",
+            "ts": "2026-09-30T17:16:40.550",
             "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-102490",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
+            "cve": "CVE-2026-102490",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-09-30T17:16:40.707",
+            "fromNVD": true
+        },
+        {
+            "title": "Cl0p MOVEit Data Extortion",
+            "severity": "critical",
+            "category": "ransomware",
+            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
+            "cve": "CVE-2023-34362",
+            "affected": "MOVEit Transfer / GoAnywhere",
+            "source": "Mandiant",
+            "ts": "Active 2025",
+            "score": 9.8,
+            "fromKEV": true,
+            "ransomware": true
         },
         {
             "title": "CVE-2026-105207",
@@ -126,16 +127,16 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-82042",
+            "title": "Salt Typhoon Telecom Breach",
             "severity": "critical",
-            "category": "vulnerability",
-            "summary": "UTMStack before 11.2.16 contains an authentication bypass vulnerability that allows remote attackers to gain full administrative API access by presenting a valid Utm-Internal-Key header matching the INTERNAL_KEY environment variable value, which the InternalApiKeyFilter accepts for any endpoint without path restriction, constant-time comparison, rate limiting, or audit logging. Attackers who obtai",
-            "cve": "CVE-2026-82042",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-02T21:16:56.643",
-            "fromNVD": true
+            "category": "apt",
+            "summary": "Chinese state-sponsored group infiltrated major US telecom providers, intercepting communications of senior officials and wiretap infrastructure. Ongoing as of 2025.",
+            "cve": null,
+            "affected": "US Telecom Infrastructure",
+            "source": "CISA/FBI",
+            "ts": "Active 2025",
+            "score": 9.7,
+            "fromKEV": false
         }
     ],
     "docs": "https://livecve.com/livecve/api-docs"
