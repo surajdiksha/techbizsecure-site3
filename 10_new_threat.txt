@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-10-05T23:47:38+00:00",
-    "next_update": "2026-10-06T23:47:38+00:00",
-    "total": 96,
+    "generated_at": "2026-10-07T01:20:52+00:00",
+    "next_update": "2026-10-08T01:20:52+00:00",
+    "total": 94,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 31,
+        "critical_total": 30,
         "kev_total": 1734,
         "sources": [
             "CISA KEV",
@@ -17,18 +17,6 @@
         ]
     },
     "threats": [
-        {
-            "title": "CVE-2026-101077",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A flaw has been found in Netcore NR289-GE 1.4.5102. This impacts the function process_request of the component boa_temp Handler. This manipulation causes missing authentication. The attack is possible to be carried out remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-            "cve": "CVE-2026-101077",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-09-28T16:17:12.143",
-            "fromNVD": true
-        },
         {
             "title": "CVE-2026-102427",
             "severity": "critical",
@@ -42,39 +30,52 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-105135",
+            "title": "Cl0p MOVEit Data Extortion",
+            "severity": "critical",
+            "category": "ransomware",
+            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
+            "cve": "CVE-2023-34362",
+            "affected": "MOVEit Transfer / GoAnywhere",
+            "source": "Mandiant",
+            "ts": "Active 2025",
+            "score": 9.8,
+            "fromKEV": true,
+            "ransomware": true
+        },
+        {
+            "title": "CVE-2026-104334",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation of the argument inputs leads to code injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure",
-            "cve": "CVE-2026-105135",
-            "score": 10,
+            "summary": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+            "cve": "CVE-2026-104334",
+            "score": 9.8,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-04T07:16:33.693",
+            "ts": "2026-10-07T01:16:34.223",
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-101072",
+            "title": "CVE-2026-104070",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A vulnerability was identified in Netcore NR289-GE 1.4.5102. This issue affects the function system of the file /ap_ip.cgi of the component CGI Handler. Such manipulation of the argument ip leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-            "cve": "CVE-2026-101072",
-            "score": 10,
-            "affected": "Multiple platforms",
+            "summary": "The Crayons plugin for SPIP before 3.5.0 contains a missing authorization vulnerability that allows unauthenticated attackers to modify arbitrary editable object fields by omitting the secu_ anti-forgery parameter in crayons_store.php, causing the authorization dispatcher to resolve an unconditionally-true handler instead of the proper modification check. Attackers can chain this flaw to write a m",
+            "cve": "CVE-2026-104070",
+            "score": 9.8,
+            "affected": "PHP",
             "source": "NVD/NIST",
-            "ts": "2026-09-28T14:17:13.973",
+            "ts": "2026-10-06T17:17:12.213",
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-101038",
+            "title": "CVE-2026-93674",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A vulnerability was determined in FAST FAC1200R 5.0_20201119_1.0.2. Affected by this vulnerability is the function MmtAtePrase of the component MmtAtePrase Parser. This manipulation causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond i",
-            "cve": "CVE-2026-101038",
-            "score": 9.9,
+            "summary": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+            "cve": "CVE-2026-93674",
+            "score": 9.8,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-09-28T11:16:43.423",
+            "ts": "2026-10-07T01:16:35.187",
             "fromNVD": true
         },
         {
@@ -102,28 +103,15 @@
             "fromNVD": true
         },
         {
-            "title": "Cl0p MOVEit Data Extortion",
-            "severity": "critical",
-            "category": "ransomware",
-            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
-            "cve": "CVE-2023-34362",
-            "affected": "MOVEit Transfer / GoAnywhere",
-            "source": "Mandiant",
-            "ts": "Active 2025",
-            "score": 9.8,
-            "fromKEV": true,
-            "ransomware": true
-        },
-        {
-            "title": "CVE-2026-105207",
+            "title": "CVE-2026-86131",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "ZITADEL 3.0.0 through 3.4.15 and 4.0.0 before 4.17.3 creates links between user accounts and external identity providers without verifying a primary factor or the caller's permission, including on identify-only Login V2 sessions and via the User Service V2 AddIDPLink endpoint. An unauthenticated attacker knowing a victim's login name can bind their own external IdP identity to the victim's account",
-            "cve": "CVE-2026-105207",
+            "summary": "A code injection vulnerability in WatchGuard Fireware OS's BOVPN Over TLS client configuration handling allows an attacker who controls the remote VPN server to execute arbitrary commands as root on the connecting Firebox.",
+            "cve": "CVE-2026-86131",
             "score": 9.8,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-04T15:16:31.677",
+            "ts": "2026-09-30T00:16:36.817",
             "fromNVD": true
         },
         {
@@ -136,6 +124,18 @@
             "source": "CISA/FBI",
             "ts": "Active 2025",
             "score": 9.7,
+            "fromKEV": false
+        },
+        {
+            "title": "Midnight Blizzard SVR Phishing",
+            "severity": "critical",
+            "category": "phishing",
+            "summary": "Russian SVR-linked APT targeting NATO government and defense organizations with sophisticated spear-phishing using Microsoft and AWS impersonation.",
+            "cve": null,
+            "affected": "Microsoft 365 / Windows",
+            "source": "CISA AA25",
+            "ts": "Ongoing 2025",
+            "score": 9.4,
             "fromKEV": false
         }
     ],
