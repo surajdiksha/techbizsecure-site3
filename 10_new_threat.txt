@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-10-07T01:20:52+00:00",
-    "next_update": "2026-10-08T01:20:52+00:00",
-    "total": 94,
+    "generated_at": "2026-10-08T01:00:52+00:00",
+    "next_update": "2026-10-09T01:00:52+00:00",
+    "total": 68,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 30,
+        "critical_total": 35,
         "kev_total": 1734,
         "sources": [
             "CISA KEV",
@@ -18,40 +18,75 @@
     },
     "threats": [
         {
-            "title": "CVE-2026-102427",
+            "title": "CVE-2026-76268",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Joomla Extension - ordasoft.com - Unauthenticated Remote Code Execution in OrdaSoft Joomla CCK < 8.3.16 - site/uploader.php is reached through the component’s normal frontend routing (task=getContent), a task with no authentication or ACL check anywhere in the dispatch chain. The handler validates the uploaded file’s content with a real magic-byte MIME check, but the extension allow-list that ",
-            "cve": "CVE-2026-102427",
-            "score": 10,
-            "affected": "PHP",
-            "source": "NVD/NIST",
-            "ts": "2026-09-30T16:17:06.623",
-            "fromNVD": true
-        },
-        {
-            "title": "Cl0p MOVEit Data Extortion",
-            "severity": "critical",
-            "category": "ransomware",
-            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
-            "cve": "CVE-2023-34362",
-            "affected": "MOVEit Transfer / GoAnywhere",
-            "source": "Mandiant",
-            "ts": "Active 2025",
-            "score": 9.8,
-            "fromKEV": true,
-            "ransomware": true
-        },
-        {
-            "title": "CVE-2026-104334",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
-            "cve": "CVE-2026-104334",
+            "summary": "In Splunk Enterprise versions below 10.4.3 and 10.2.7, an unauthenticated user with network access to the Patroni Representational State Transfer (REST) Application Programming Interface (API) on a search head cluster member could execute attacker-controlled operating-system commands. The vulnerability is possible because this interface does not require authentication for critical configuration op",
+            "cve": "CVE-2026-76268",
             "score": 9.8,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-07T01:16:34.223",
+            "ts": "2026-10-07T21:17:17.607",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-76501",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability in the Segment Routing over IPv6 (SRv6) Operation, Administration, and Maintenance (OAM) feature of Cisco NX-OS Software, known as NGOAM, could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges or cause a denial of service (DoS) on an affected device.\r\n\r\nThis vulnerability is due to improper input validation of IP traffic when the NGOAM and SR",
+            "cve": "CVE-2026-76501",
+            "score": 9.8,
+            "affected": "Cisco",
+            "source": "NVD/NIST",
+            "ts": "2026-10-07T17:17:02.113",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-76500",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76500 are related to ",
+            "cve": "CVE-2026-76500",
+            "score": 9.8,
+            "affected": "Cisco",
+            "source": "NVD/NIST",
+            "ts": "2026-10-07T17:17:01.963",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-76486",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability in the VXLAN Operation, Administration, and Maintenance (OAM) feature of Cisco NX-OS Software, known as NGOAM, could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges or cause a Denial-of-Service (DoS) on an affected device.\r\n\r\nThis vulnerability is due to improper input validation of IP traffic when the NGOAM feature is enabled. An attacker c",
+            "cve": "CVE-2026-76486",
+            "score": 9.8,
+            "affected": "Cisco",
+            "source": "NVD/NIST",
+            "ts": "2026-10-07T17:17:01.350",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-76485",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability in the VXLAN Operation, Administration, and Maintenance (OAM) feature of Cisco NX-OS Software, known as NGOAM, could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges or cause a Denial-of-Service (DoS) on an affected device.\r\n\r\nThis vulnerability is due to improper input validation of IP traffic when the NGOAM feature is enabled. An attacker c",
+            "cve": "CVE-2026-76485",
+            "score": 9.8,
+            "affected": "Cisco",
+            "source": "NVD/NIST",
+            "ts": "2026-10-07T17:17:01.183",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-76480",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "As part of Cisco's ongoing commitment to proactive security and product quality, the engineering team for Cisco License On-Prem, formerly Cisco Smart Software Manager On-Prem (SSM On-Prem), has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-202",
+            "cve": "CVE-2026-76480",
+            "score": 9.8,
+            "affected": "Cisco",
+            "source": "NVD/NIST",
+            "ts": "2026-10-07T17:17:00.620",
             "fromNVD": true
         },
         {
@@ -67,6 +102,18 @@
             "fromNVD": true
         },
         {
+            "title": "CVE-2026-104334",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+            "cve": "CVE-2026-104334",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-07T01:16:34.223",
+            "fromNVD": true
+        },
+        {
             "title": "CVE-2026-93674",
             "severity": "critical",
             "category": "vulnerability",
@@ -79,64 +126,17 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-102489",
+            "title": "Cl0p MOVEit Data Extortion",
             "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.",
-            "cve": "CVE-2026-102489",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-09-30T17:16:40.550",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-102490",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
-            "cve": "CVE-2026-102490",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-09-30T17:16:40.707",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-86131",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A code injection vulnerability in WatchGuard Fireware OS's BOVPN Over TLS client configuration handling allows an attacker who controls the remote VPN server to execute arbitrary commands as root on the connecting Firebox.",
-            "cve": "CVE-2026-86131",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-09-30T00:16:36.817",
-            "fromNVD": true
-        },
-        {
-            "title": "Salt Typhoon Telecom Breach",
-            "severity": "critical",
-            "category": "apt",
-            "summary": "Chinese state-sponsored group infiltrated major US telecom providers, intercepting communications of senior officials and wiretap infrastructure. Ongoing as of 2025.",
-            "cve": null,
-            "affected": "US Telecom Infrastructure",
-            "source": "CISA/FBI",
+            "category": "ransomware",
+            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
+            "cve": "CVE-2023-34362",
+            "affected": "MOVEit Transfer / GoAnywhere",
+            "source": "Mandiant",
             "ts": "Active 2025",
-            "score": 9.7,
-            "fromKEV": false
-        },
-        {
-            "title": "Midnight Blizzard SVR Phishing",
-            "severity": "critical",
-            "category": "phishing",
-            "summary": "Russian SVR-linked APT targeting NATO government and defense organizations with sophisticated spear-phishing using Microsoft and AWS impersonation.",
-            "cve": null,
-            "affected": "Microsoft 365 / Windows",
-            "source": "CISA AA25",
-            "ts": "Ongoing 2025",
-            "score": 9.4,
-            "fromKEV": false
+            "score": 9.8,
+            "fromKEV": true,
+            "ransomware": true
         }
     ],
     "docs": "https://livecve.com/livecve/api-docs"
