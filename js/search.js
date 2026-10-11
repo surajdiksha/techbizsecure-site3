@@ -17,7 +17,7 @@ const feedback=document.getElementById('searchFeedback');
 const destinations={
   nvd:query=>`https://nvd.nist.gov/vuln/search?keyword=${encodeURIComponent(`"${query}"`)}&resultType=records`,
   cve:query=>`https://www.cve.org/CVERecord/SearchResults?query=${encodeURIComponent(query)}`,
-  circl:query=>`https://cve.circl.lu/vuln/${encodeURIComponent(query.toLowerCase())}`
+  circl:query=>`https://cve.circl.lu/search?ft_q=${encodeURIComponent(`"${query.toLowerCase()}"`)}`
 };
 function openSearch(provider){
   const query=queryInput.value.trim();
