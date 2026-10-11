@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Search vulnerability records across NVD, CVE.org and CIRCL Vulnerability Lookup.">
+  <meta name="theme-color" content="#050816">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'none'; worker-src 'none'; media-src 'none'; manifest-src 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Vulnerability Search | TechBiz Secure</title>
+  <link rel="icon" href="assets/techbizsecure-brand-mark.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a class="brand logo-lockup" href="index.html#home" aria-label="TechBiz Secure"><img class="brand-logo" src="assets/techbizsecure-logo-horizontal.png" alt="TechBiz Secure"></a>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main navigation">
+      <a href="index.html#services">Services</a><a href="index.html#security">Security</a><a href="index.html#ai">AI Security</a><a href="index.html#about">About</a><a href="search.html" aria-current="page">Search</a>
+    </nav>
+  </div>
+</header>
+<main class="search-page">
+  <div class="search-wrap">
+    <div class="search-heading">
+      <div class="eyebrow">VULNERABILITY INTELLIGENCE</div>
+      <h1>Search <span>vulnerabilities.</span></h1>
+      <p>Look up a CVE or vulnerability identifier across trusted public databases. Choose a source below to open its results in a new tab.</p>
+    </div>
+    <section class="search-panel" aria-labelledby="search-label">
+      <form id="vulnerabilitySearch" novalidate>
+        <label id="search-label" for="vulnerabilityQuery">Search by CVE ID or keyword</label>
+        <div class="search-input-row">
+          <input id="vulnerabilityQuery" name="query" type="search" placeholder="e.g. CVE-2026-9999" autocomplete="off" required>
+          <button class="btn primary" type="submit">Search NVD <b>→</b></button>
+        </div>
+        <p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p>
+        <div class="search-providers" aria-label="Choose a vulnerability search source">
+          <button class="search-provider" type="button" data-provider="nvd">
+            <strong>NVD Vulnerability Search</strong><span>Search the National Vulnerability Database by quoted keyword.</span><i>Search NVD ↗</i>
+          </button>
+          <button class="search-provider" type="button" data-provider="cve">
+            <strong>CVE ORG Vulnerability Search</strong><span>Find the matching record in the official CVE Program database.</span><i>Search CVE.org ↗</i>
+          </button>
+          <button class="search-provider" type="button" data-provider="circl">
+            <strong>CIRCL Vulnerability Lookup</strong><span>Open the CIRCL record for a CVE identifier.</span><i>Search CIRCL ↗</i>
+          </button>
+        </div>
+        <p class="search-hint">Searches open on the selected provider. TechBiz Secure does not receive or store your query.</p>
+      </form>
+    </section>
+    <a class="search-back" href="index.html#home">← Back to TechBiz Secure</a>
+  </div>
+</main>
+<script src="js/search.js"></script>
+</body>
+</html>

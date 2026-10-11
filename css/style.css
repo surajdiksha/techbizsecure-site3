@@ -70,3 +70,35 @@ footer{border-top:1px solid var(--line);padding:30px 0}.footer{display:flex;alig
 .threat-records::-webkit-scrollbar{width:9px}
 .threat-records::-webkit-scrollbar-track{background:#0a1226}
 .threat-records::-webkit-scrollbar-thumb{background:#29405f;border:2px solid #0a1226;border-radius:8px}
+
+/* Security Fabric alignment */
+.console-shell{transform:none}
+.node{display:flex;align-items:center;gap:5px;line-height:1}
+.node i{flex:none;margin:0}
+.c1{width:165px}
+.c2{width:198px}
+.c3{width:189px}
+.c4{width:220px}
+.c5{width:145px}
+
+/* Vulnerability search page */
+.search-page{min-height:100vh;padding:145px 0 90px;background:radial-gradient(ellipse at 50% 12%,rgba(33,212,242,.1),transparent 42%)}
+.search-wrap{width:min(920px,92%);margin:auto}
+.search-heading{text-align:center;margin-bottom:40px}
+.search-heading h1{font-size:clamp(38px,6vw,64px)}
+.search-heading p{max-width:620px;margin:20px auto 0;color:var(--muted);font-size:15px}
+.search-panel{border:1px solid #22344f;border-radius:18px;background:linear-gradient(145deg,rgba(11,20,41,.96),rgba(7,13,27,.96));padding:30px;box-shadow:0 30px 90px rgba(0,0,0,.32)}
+.search-panel label{display:block;margin-bottom:10px;color:#aab8cb;font:600 12px "Space Grotesk";letter-spacing:.3px}
+.search-input-row{display:flex;gap:10px}
+.search-input-row input{min-width:0;flex:1;height:52px;font-size:15px}
+.search-providers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.search-provider{min-height:145px;padding:19px;border:1px solid #263955;border-radius:12px;background:#081126;color:#fff;text-align:left;cursor:pointer;transition:border-color .2s,transform .2s,background .2s}
+.search-provider:hover,.search-provider:focus-visible{border-color:var(--cyan);background:#0a1830;transform:translateY(-2px);outline:none}
+.search-provider strong{display:block;font:600 15px "Space Grotesk";line-height:1.35}
+.search-provider span{display:block;margin-top:10px;color:#8293ac;font-size:11px;line-height:1.5}
+.search-provider i{display:block;margin-top:17px;color:var(--cyan);font-size:11px;font-style:normal;font-weight:700}
+.search-hint{margin-top:17px;color:#64758f;font-size:11px;text-align:center}
+.search-feedback{min-height:20px;margin-top:12px;color:#ffb7ad;font-size:12px;text-align:center}
+.search-back{display:block;margin-top:26px;color:var(--cyan);font-size:12px;font-weight:700;text-align:center}
+@media(max-width:700px){.search-panel{padding:22px}.search-providers{grid-template-columns:1fr}.search-provider{min-height:0}.search-provider i{margin-top:11px}}
+@media(max-width:650px){.search-page{padding-top:115px}.search-input-row{flex-direction:column}.search-input-row .btn{width:100%}}
