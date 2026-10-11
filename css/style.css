@@ -102,3 +102,20 @@ footer{border-top:1px solid var(--line);padding:30px 0}.footer{display:flex;alig
 .search-back{display:block;margin-top:26px;color:var(--cyan);font-size:12px;font-weight:700;text-align:center}
 @media(max-width:700px){.search-panel{padding:22px}.search-providers{grid-template-columns:1fr}.search-provider{min-height:0}.search-provider i{margin-top:11px}}
 @media(max-width:650px){.search-page{padding-top:115px}.search-input-row{flex-direction:column}.search-input-row .btn{width:100%}}
+
+/* Security Fabric: keep every label inside the radar and connect it to the hub. */
+.hero-console{height:590px}
+.console-map{height:470px}
+.radar2{width:min(450px,100%);height:auto;aspect-ratio:1}
+.fabric-connections{position:absolute;inset:0;width:100%;height:100%;z-index:2;overflow:visible;pointer-events:none}
+.fabric-connections line{stroke:rgba(33,212,242,.58);stroke-width:1.4;vector-effect:non-scaling-stroke}
+.node,.float-tag{left:var(--point-x);top:var(--point-y);right:auto;bottom:auto;transform:translate(-50%,-50%);z-index:5}
+.n1{--point-x:25%;--point-y:28%}
+.n2{--point-x:75%;--point-y:28%}
+.n3{--point-x:25%;--point-y:72%}
+.n4{--point-x:75%;--point-y:72%}
+.n5{--point-x:82%;--point-y:50%}
+.tag1{--point-x:50%;--point-y:19%}
+.tag2{--point-x:50%;--point-y:81%}
+@media(max-width:900px){.hero-console{height:590px}}
+@media(max-width:650px){.hero-console{height:510px}.float-tag{display:block}}
