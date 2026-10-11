@@ -119,3 +119,17 @@ footer{border-top:1px solid var(--line);padding:30px 0}.footer{display:flex;alig
 .tag2{--point-x:50%;--point-y:81%}
 @media(max-width:900px){.hero-console{height:590px}}
 @media(max-width:650px){.hero-console{height:510px}.float-tag{display:block}}
+
+/* Security Fabric final positioning and spoke visibility */
+.console-map .map-grid{z-index:0}
+.console-map .radar{z-index:1}
+.console-map .fabric-connections{display:block;z-index:3;opacity:1}
+.console-map .fabric-connections line{stroke:#21d4f2;stroke-width:2;stroke-linecap:round;opacity:.95}
+.console-map .node,.console-map .float-tag{z-index:5}
+.console-map .node.n1{left:21%!important;top:31%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
+.console-map .node.n2{left:79%!important;top:31%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
+.console-map .node.n3{left:21%!important;top:69%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
+.console-map .node.n4{left:79%!important;top:69%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
+.console-map .node.n5{left:82%!important;top:50%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
+.console-map .float-tag.tag1{left:50%!important;top:18%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
+.console-map .float-tag.tag2{left:50%!important;top:82%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
