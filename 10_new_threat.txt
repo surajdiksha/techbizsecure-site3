@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-10-14T01:58:47+00:00",
-    "next_update": "2026-10-15T01:58:47+00:00",
-    "total": 145,
+    "generated_at": "2026-10-14T22:28:38+00:00",
+    "next_update": "2026-10-15T22:28:38+00:00",
+    "total": 138,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 92,
-        "kev_total": 1741,
+        "critical_total": 77,
+        "kev_total": 1745,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -17,6 +17,18 @@
         ]
     },
     "threats": [
+        {
+            "title": "CVE-2026-110536",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was determined in D-Link DIR-868L 2.01b05. This impacts the function system of the file /htdocs/cgibin of the component HNAP CGI Handler. Executing a manipulation of the argument SOAPACTION can lead to os command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+            "cve": "CVE-2026-110536",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-14T19:17:10.610",
+            "fromNVD": true
+        },
         {
             "title": "CVE-2026-108918",
             "severity": "critical",
@@ -27,54 +39,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-10-12T18:17:22.353",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-105899",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "ColdFusion is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-105899",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-13T21:17:29.483",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-103849",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-103849",
-            "score": 10,
-            "affected": "Adobe",
-            "source": "NVD/NIST",
-            "ts": "2026-10-13T19:17:53.997",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-110130",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Dockhand before 1.0.45 contains an authentication bypass in which the global auth hook skips authentication for any path ending in a static-asset extension such as .js, including /api/* routes, and the user-mutation handlers fail open for unauthenticated callers. Unauthenticated remote attackers can send a PUT request to /api/users/<id>.js to reset the admin's or any user's password and take over ",
-            "cve": "CVE-2026-110130",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-13T19:18:43.397",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-108892",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was determined in Linksys E1700 1.0.0.4.003. This vulnerability affects the function ssid1MACFilter of the file /goform/ssid1MACFilter of the component Mac Filter. This manipulation of the argument newap_text_%d causes stack-based buffer overflow. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about ",
-            "cve": "CVE-2026-108892",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-12T14:17:09.530",
             "fromNVD": true
         },
         {
@@ -90,15 +54,27 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-48382",
+            "title": "CVE-2026-108892",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was determined in Linksys E1700 1.0.0.4.003. This vulnerability affects the function ssid1MACFilter of the file /goform/ssid1MACFilter of the component Mac Filter. This manipulation of the argument newap_text_%d causes stack-based buffer overflow. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about ",
+            "cve": "CVE-2026-108892",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-12T14:17:09.530",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-48383",
             "severity": "critical",
             "category": "vulnerability",
             "summary": "Adobe Experience Manager is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-48382",
+            "cve": "CVE-2026-48383",
             "score": 10,
             "affected": "Adobe",
             "source": "NVD/NIST",
-            "ts": "2026-10-13T20:17:28.900",
+            "ts": "2026-10-13T20:17:29.017",
             "fromNVD": true
         },
         {
@@ -114,27 +90,51 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-90532",
+            "title": "CVE-2026-109108",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Adobe Experience Manager is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-90532",
-            "score": 10,
-            "affected": "Adobe",
+            "summary": "A security vulnerability has been detected in Wavlink WL-WN530BE1-A 251117. This affects the function popen of the file /cgi-bin/uploadVpn.cgi. Such manipulation of the argument Type leads to os command injection. The attack may be performed from remote. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure.",
+            "cve": "CVE-2026-109108",
+            "score": 9.9,
+            "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-13T20:19:10.150",
+            "ts": "2026-10-13T08:16:59.917",
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-48383",
+            "title": "CVE-2026-108929",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Adobe Experience Manager is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-48383",
-            "score": 10,
-            "affected": "Adobe",
+            "summary": "A flaw has been found in Netcore NR268 1.7.121109. The affected element is the function execvp of the file /router/DDNSset.cgi of the component DDNS. Executing a manipulation of the argument Hostname can lead to argument injection. The attack can be launched remotely.",
+            "cve": "CVE-2026-108929",
+            "score": 9.9,
+            "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-13T20:17:29.017",
+            "ts": "2026-10-12T21:17:09.410",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-108896",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was found in Linksys E1700 1.0.0.4.003. This affects the function setLinksysIpv6 of the file /goform/setLinksysIpv6. The manipulation of the argument _6rd_prefix/_6rd_prefix_len results in os command injection. The attack can be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+            "cve": "CVE-2026-108896",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-12T15:17:07.423",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-108914",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in Edimax BR-6208AC 1.32. Affected by this issue is some unknown functionality of the file /goform/formWlSiteSurvey. This manipulation of the argument ifname causes buffer overflow. Remote exploitation of the attack is possible. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerabili",
+            "cve": "CVE-2026-108914",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-12T17:17:13.890",
             "fromNVD": true
         }
     ],
