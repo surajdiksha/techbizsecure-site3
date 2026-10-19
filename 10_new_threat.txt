@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-10-18T02:26:42+00:00",
-    "next_update": "2026-10-19T02:26:42+00:00",
-    "total": 105,
+    "generated_at": "2026-10-18T22:27:05+00:00",
+    "next_update": "2026-10-19T22:27:05+00:00",
+    "total": 101,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 42,
+        "critical_total": 38,
         "kev_total": 1748,
         "sources": [
             "CISA KEV",
@@ -30,27 +30,27 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-111911",
+            "title": "CVE-2026-111998",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Attackers can stage a victim username, submit a forged fmt=none attestation to register a passkey, then log in bypassing passwords and TOTP for account takeover.",
-            "cve": "CVE-2026-111911",
-            "score": 9.8,
-            "affected": "PHP",
-            "source": "NVD/NIST",
-            "ts": "2026-10-17T19:16:33.500",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-110640",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Whisper-node through 1.1.1 contains an OS command injection vulnerability that allows attackers to execute commands by supplying crafted filePath or whisperOptions.language values to whisper(). Attackers can inject shell metacharacters or $() substitution into the command string built by createCppCommand() and run via shelljs exec() to execute commands with Node.js process privileges.",
-            "cve": "CVE-2026-110640",
+            "summary": "Vanus 0.8.0 through 0.9.0 contains a default credentials vulnerability that allows unauthenticated remote attackers to gain cluster-admin access by using the hardcoded admin token. Attackers can send the fixed Bearer token to the gateway gRPC proxy port to manage namespaces, eventbuses, users, tokens, and role bindings, and read or publish events.",
+            "cve": "CVE-2026-111998",
             "score": 9.8,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-14T15:17:17.277",
+            "ts": "2026-10-18T12:17:11.730",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-111281",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Jooan JA-A12 IP cameras with firmware 009_20171107 and 05.02.31.105 contain a remote code execution vulnerability that allows unauthenticated attackers to run root commands via hard-coded credentials. Attackers send singleCMD=SetDiagMode to /goform/SingleHandlebyCommand with an attacker-chosen authserverip and authcode, making the jooandiag daemon execute their commands through /bin/sh, giving ful",
+            "cve": "CVE-2026-111281",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-15T22:19:29.457",
             "fromNVD": true
         },
         {
@@ -66,15 +66,27 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-104736",
+            "title": "CVE-2026-110640",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "The LearnPress plugin for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 4.4.10 via deserialization of untrusted input from the 'checkout-email' request parameter during the checkout AJAX action. The value is passed through sanitize_text_field(), which does not strip serialized object syntax, then stored in the LearnPress session table and later fed to LP_Helper:",
-            "cve": "CVE-2026-104736",
+            "summary": "Whisper-node through 1.1.1 contains an OS command injection vulnerability that allows attackers to execute commands by supplying crafted filePath or whisperOptions.language values to whisper(). Attackers can inject shell metacharacters or $() substitution into the command string built by createCppCommand() and run via shelljs exec() to execute commands with Node.js process privileges.",
+            "cve": "CVE-2026-110640",
             "score": 9.8,
-            "affected": "PHP",
+            "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-17T04:16:47.780",
+            "ts": "2026-10-14T15:17:17.277",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-110636",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "pypdftk through 0.5 contains an OS command injection vulnerability in fill_form(), dump_data_fields(), and pdftk_cmd_util() that builds shell commands from caller-supplied paths. Attackers controlling pdf_path or out_file can inject shell metacharacters interpreted by subprocess.Popen with shell=True to execute OS commands as the Python process.",
+            "cve": "CVE-2026-110636",
+            "score": 9.8,
+            "affected": "Python",
+            "source": "NVD/NIST",
+            "ts": "2026-10-14T15:17:16.710",
             "fromNVD": true
         },
         {
@@ -90,29 +102,28 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-108707",
+            "title": "CVE-2020-37282",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Wukong_HRM through commit 186115e contains an authentication bypass vulnerability in ParamAspect that allows unauthenticated attackers to call every HRM API endpoint by omitting the AUTH-TOKEN header. Attackers gain HR administrator access to read payslips, salary history and employee personal data, download attachments, and modify or delete company-wide HR records.",
-            "cve": "CVE-2026-108707",
+            "summary": "office-converter through 1.0.2 contains an OS command injection vulnerability that allows attackers to execute commands by supplying a crafted fileName to generatePdf() or generateHtml(). Attackers can embed $(...), backticks, or a closing quote with shell metacharacters in the file name, which is concatenated into an unoconv command run via child_process.exec(), executing commands with Node.js pr",
+            "cve": "CVE-2020-37282",
             "score": 9.8,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-11T02:16:39.477",
+            "ts": "2026-10-14T15:16:59.520",
             "fromNVD": true
         },
         {
-            "title": "Cl0p MOVEit Data Extortion",
+            "title": "CVE-2026-111911",
             "severity": "critical",
-            "category": "ransomware",
-            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
-            "cve": "CVE-2023-34362",
-            "affected": "MOVEit Transfer / GoAnywhere",
-            "source": "Mandiant",
-            "ts": "Active 2025",
+            "category": "vulnerability",
+            "summary": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Attackers can stage a victim username, submit a forged fmt=none attestation to register a passkey, then log in bypassing passwords and TOTP for account takeover.",
+            "cve": "CVE-2026-111911",
             "score": 9.8,
-            "fromKEV": true,
-            "ransomware": true
+            "affected": "PHP",
+            "source": "NVD/NIST",
+            "ts": "2026-10-17T19:16:33.500",
+            "fromNVD": true
         },
         {
             "title": "CVE-2026-102764",
@@ -124,18 +135,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-10-15T21:17:00.117",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-111281",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Jooan JA-A12 IP cameras with firmware 009_20171107 and 05.02.31.105 contain a remote code execution vulnerability that allows unauthenticated attackers to run root commands via hard-coded credentials. Attackers send singleCMD=SetDiagMode to /goform/SingleHandlebyCommand with an attacker-chosen authserverip and authcode, making the jooandiag daemon execute their commands through /bin/sh, giving ful",
-            "cve": "CVE-2026-111281",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-15T22:19:29.457",
             "fromNVD": true
         }
     ],
