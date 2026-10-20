@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-10-18T22:27:05+00:00",
-    "next_update": "2026-10-19T22:27:05+00:00",
-    "total": 101,
+    "generated_at": "2026-10-20T00:53:56+00:00",
+    "next_update": "2026-10-21T00:53:56+00:00",
+    "total": 100,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 38,
+        "critical_total": 39,
         "kev_total": 1748,
         "sources": [
             "CISA KEV",
@@ -30,15 +30,27 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-111998",
+            "title": "CVE-2026-112371",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Vanus 0.8.0 through 0.9.0 contains a default credentials vulnerability that allows unauthenticated remote attackers to gain cluster-admin access by using the hardcoded admin token. Attackers can send the fixed Bearer token to the gateway gRPC proxy port to manage namespaces, eventbuses, users, tokens, and role bindings, and read or publish events.",
-            "cve": "CVE-2026-111998",
-            "score": 9.8,
+            "summary": "A vulnerability was determined in H3C Magic NX15 NX15V100R017. Impacted is the function write of the file /api/esps of the component RPC Interface. Executing a manipulation of the argument path can lead to code injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure.",
+            "cve": "CVE-2026-112371",
+            "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-18T12:17:11.730",
+            "ts": "2026-10-19T23:17:36.000",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-112370",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was found in H3C Magic NX15 100R017. This issue affects the function sub_416874 of the file /usr/bin/usrlist. Performing a manipulation results in os command injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
+            "cve": "CVE-2026-112370",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-19T23:17:35.817",
             "fromNVD": true
         },
         {
@@ -51,30 +63,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-10-15T22:19:29.457",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-109566",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Rapyd Admin from 9.0.0 before 9.20.0 contains a hard-coded credentials vulnerability that allows remote unauthenticated attackers to gain super-admin access through an AuthSeeder-created admin@laravel account with password admin. The account is seeded by the setup installer and silently re-created on every rpd:make run, letting attackers log in as a global super admin bypassing per-record authoriz",
-            "cve": "CVE-2026-109566",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-12T21:17:13.190",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-110640",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Whisper-node through 1.1.1 contains an OS command injection vulnerability that allows attackers to execute commands by supplying crafted filePath or whisperOptions.language values to whisper(). Attackers can inject shell metacharacters or $() substitution into the command string built by createCppCommand() and run via shelljs exec() to execute commands with Node.js process privileges.",
-            "cve": "CVE-2026-110640",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-14T15:17:17.277",
             "fromNVD": true
         },
         {
@@ -114,18 +102,6 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-111911",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Attackers can stage a victim username, submit a forged fmt=none attestation to register a passkey, then log in bypassing passwords and TOTP for account takeover.",
-            "cve": "CVE-2026-111911",
-            "score": 9.8,
-            "affected": "PHP",
-            "source": "NVD/NIST",
-            "ts": "2026-10-17T19:16:33.500",
-            "fromNVD": true
-        },
-        {
             "title": "CVE-2026-102764",
             "severity": "critical",
             "category": "vulnerability",
@@ -136,6 +112,31 @@
             "source": "NVD/NIST",
             "ts": "2026-10-15T21:17:00.117",
             "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-110640",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Whisper-node through 1.1.1 contains an OS command injection vulnerability that allows attackers to execute commands by supplying crafted filePath or whisperOptions.language values to whisper(). Attackers can inject shell metacharacters or $() substitution into the command string built by createCppCommand() and run via shelljs exec() to execute commands with Node.js process privileges.",
+            "cve": "CVE-2026-110640",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-14T15:17:17.277",
+            "fromNVD": true
+        },
+        {
+            "title": "Cl0p MOVEit Data Extortion",
+            "severity": "critical",
+            "category": "ransomware",
+            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
+            "cve": "CVE-2023-34362",
+            "affected": "MOVEit Transfer / GoAnywhere",
+            "source": "Mandiant",
+            "ts": "Active 2025",
+            "score": 9.8,
+            "fromKEV": true,
+            "ransomware": true
         }
     ],
     "docs": "https://livecve.com/livecve/api-docs"
