@@ -1,7 +1,7 @@
 {
     "ok": true,
     "source": "CISA Known Exploited Vulnerabilities Catalog",
-    "fetched_at": "2026-10-26T02:35:36+00:00",
+    "fetched_at": "2026-10-26T22:02:27+00:00",
     "total": 1756,
     "returned": 10,
     "offset": 0,
