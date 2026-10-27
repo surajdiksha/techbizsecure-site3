@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-10-26T02:35:42+00:00",
-    "next_update": "2026-10-27T02:35:42+00:00",
-    "total": 147,
+    "generated_at": "2026-10-27T04:24:46+00:00",
+    "next_update": "2026-10-28T04:24:46+00:00",
+    "total": 151,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 82,
-        "kev_total": 1756,
+        "critical_total": 87,
+        "kev_total": 1758,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -18,99 +18,15 @@
     },
     "threats": [
         {
-            "title": "CVE-2026-91221",
+            "title": "CVE-2026-116508",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional produc",
-            "cve": "CVE-2026-91221",
+            "summary": "A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function sub_402340 of the file infostat.cgi of the component Device-Information CGI. Performing a manipulation of the argument CONTENT_LENGTH results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used f",
+            "cve": "CVE-2026-116508",
             "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-20T22:20:22.580",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-97785",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Improper authentication in AAD App Proxy allows an unauthorized attacker to elevate privileges over a network.",
-            "cve": "CVE-2026-97785",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-22T22:20:13.483",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-83938",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-            "cve": "CVE-2026-83938",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-22T22:19:18.540",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-91231",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scop",
-            "cve": "CVE-2026-91231",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-20T22:20:23.787",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-81212",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 allows an unauthenticated user to perform an arbitrary write into shared Redis under any tenant's key. This collapses the platform's credential-encryption boundary and lets an anonymous caller poison any tenant's cached flow parameters.",
-            "cve": "CVE-2026-81212",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-20T22:19:51.737",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-87337",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impa",
-            "cve": "CVE-2026-87337",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-20T22:20:11.347",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-91216",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional produc",
-            "cve": "CVE-2026-91216",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-20T22:20:22.013",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-113744",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A security vulnerability has been detected in Tenda AC19 16.03.10.07. The impacted element is the function formSetFirewallCfg of the file /goform/SetFirewallCfg of the component httpd Web Management Service. Such manipulation of the argument firewallEn leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed publicly and may be used.",
-            "cve": "CVE-2026-113744",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-21T02:17:07.053",
+            "ts": "2026-10-26T22:16:54.373",
             "fromNVD": true
         },
         {
@@ -126,6 +42,78 @@
             "fromNVD": true
         },
         {
+            "title": "CVE-2026-91221",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional produc",
+            "cve": "CVE-2026-91221",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-20T22:20:22.580",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-91231",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional products (scop",
+            "cve": "CVE-2026-91231",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-20T22:20:23.787",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-91216",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle SOA Suite.  While the vulnerability is in Oracle SOA Suite, attacks may significantly impact additional produc",
+            "cve": "CVE-2026-91216",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-20T22:20:22.013",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-87337",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impa",
+            "cve": "CVE-2026-87337",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-20T22:20:11.347",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-81212",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 allows an unauthenticated user to perform an arbitrary write into shared Redis under any tenant's key. This collapses the platform's credential-encryption boundary and lets an anonymous caller poison any tenant's cached flow parameters.",
+            "cve": "CVE-2026-81212",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-20T22:19:51.737",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-113744",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A security vulnerability has been detected in Tenda AC19 16.03.10.07. The impacted element is the function formSetFirewallCfg of the file /goform/SetFirewallCfg of the component httpd Web Management Service. Such manipulation of the argument firewallEn leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed publicly and may be used.",
+            "cve": "CVE-2026-113744",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-21T02:17:07.053",
+            "fromNVD": true
+        },
+        {
             "title": "CVE-2026-114383",
             "severity": "critical",
             "category": "vulnerability",
@@ -136,7 +124,19 @@
             "source": "NVD/NIST",
             "ts": "2026-10-21T22:16:49.077",
             "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-114382",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A security flaw has been discovered in TOTOLINK EX200 5.2.3c.7200. This affects the function setStaticDhcpConfig of the file /cgi-bin/cstecgi.cgi of the component lan.so. The manipulation of the argument Comment results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks.",
+            "cve": "CVE-2026-114382",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-21T22:16:48.910",
+            "fromNVD": true
         }
     ],
-    "docs": "https://livecve.com/livecve/api-docs"
+    "docs": "https://livecve.com/api-docs"
 }
