@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-10-29T00:21:12+00:00",
-    "next_update": "2026-10-30T00:21:12+00:00",
-    "total": 117,
+    "generated_at": "2026-10-30T01:00:37+00:00",
+    "next_update": "2026-10-31T01:00:37+00:00",
+    "total": 105,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 56,
-        "kev_total": 1762,
+        "critical_total": 47,
+        "kev_total": 1764,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -17,18 +17,6 @@
         ]
     },
     "threats": [
-        {
-            "title": "CVE-2026-105781",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary SQL commands, potentially gaining elevated access or control over the victim's account or session. Exploit",
-            "cve": "CVE-2026-105781",
-            "score": 10,
-            "affected": "Adobe",
-            "source": "NVD/NIST",
-            "ts": "2026-10-27T17:16:56.430",
-            "fromNVD": true
-        },
         {
             "title": "CVE-2026-116508",
             "severity": "critical",
@@ -42,15 +30,39 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-115384",
+            "title": "CVE-2026-105781",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Wasmtime 39.0.0 before 48.0.4 and 49.0.0 before 49.0.2 contains a stack buffer overflow vulnerability that allows malicious guests to write ~16KB to the native stack via unvalidated async callback result types. Attackers can supply components with mistyped component-model-async callback functions to overwrite return addresses, crashing the host or escaping the sandbox.",
-            "cve": "CVE-2026-115384",
+            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary SQL commands, potentially gaining elevated access or control over the victim's account or session. Exploit",
+            "cve": "CVE-2026-105781",
+            "score": 10,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-10-27T17:16:56.430",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-107329",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+            "cve": "CVE-2026-107329",
             "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-22T19:17:45.543",
+            "ts": "2026-10-29T16:17:50.633",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-107327",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to missing authorization.",
+            "cve": "CVE-2026-107327",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-29T16:17:50.330",
             "fromNVD": true
         },
         {
@@ -66,6 +78,18 @@
             "fromNVD": true
         },
         {
+            "title": "CVE-2026-105780",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-105780",
+            "score": 9.9,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-10-27T17:16:56.313",
+            "fromNVD": true
+        },
+        {
             "title": "CVE-2026-116231",
             "severity": "critical",
             "category": "vulnerability",
@@ -75,18 +99,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-10-26T08:17:17.620",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-104351",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-104351",
-            "score": 9.9,
-            "affected": "Adobe",
-            "source": "NVD/NIST",
-            "ts": "2026-10-27T17:16:55.593",
             "fromNVD": true
         },
         {
@@ -102,40 +114,29 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-105780",
+            "title": "CVE-2026-104351",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-105780",
+            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-104351",
             "score": 9.9,
             "affected": "Adobe",
             "source": "NVD/NIST",
-            "ts": "2026-10-27T17:16:56.313",
+            "ts": "2026-10-27T17:16:55.593",
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-115377",
+            "title": "Cl0p MOVEit Data Extortion",
             "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Incus before 6.0.7, 6.1.0 before 7.0.2, and 7.1.0 before 7.5.0 contains an arbitrary file write vulnerability that allows malicious migration sources to write host files by planting symlinks in transferred volumes. Attackers can craft rsync or btrfs receive streams with a symlink such as rootfs pointing to the host root, writing files as root for full host compromise.",
-            "cve": "CVE-2026-115377",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-22T19:17:44.460",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-115375",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Incus 7.0.0 before 7.0.2 and 7.1.0 before 7.5.0 contains a path traversal vulnerability that allows clients able to create instances to write files on the host. The flaw stems from unvalidated dependent custom volume names in instance backup index.yaml files. Attackers can import a crafted instance backup with ../ sequences in dependent volume names to create root-owned directories with controlled",
-            "cve": "CVE-2026-115375",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-22T19:17:44.133",
-            "fromNVD": true
+            "category": "ransomware",
+            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
+            "cve": "CVE-2023-34362",
+            "affected": "MOVEit Transfer / GoAnywhere",
+            "source": "Mandiant",
+            "ts": "Active 2025",
+            "score": 9.8,
+            "fromKEV": true,
+            "ransomware": true
         }
     ],
     "docs": "https://livecve.com/livecve/api-docs"
