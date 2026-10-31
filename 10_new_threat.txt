@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-10-30T01:00:37+00:00",
-    "next_update": "2026-10-31T01:00:37+00:00",
-    "total": 105,
+    "generated_at": "2026-10-31T01:41:48+00:00",
+    "next_update": "2026-11-01T01:41:48+00:00",
+    "total": 106,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
         "critical_total": 47,
-        "kev_total": 1764,
+        "kev_total": 1766,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -42,27 +42,15 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-107329",
+            "title": "CVE-2026-116231",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
-            "cve": "CVE-2026-107329",
+            "summary": "A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1. The impacted element is an unknown function of the component Ser2net. Performing a manipulation of the argument regmsg results in crlf injection. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not",
+            "cve": "CVE-2026-116231",
             "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-29T16:17:50.633",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-107327",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to missing authorization.",
-            "cve": "CVE-2026-107327",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-29T16:17:50.330",
+            "ts": "2026-10-26T08:17:17.620",
             "fromNVD": true
         },
         {
@@ -78,27 +66,15 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-105780",
+            "title": "CVE-2026-104351",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-105780",
+            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-104351",
             "score": 9.9,
             "affected": "Adobe",
             "source": "NVD/NIST",
-            "ts": "2026-10-27T17:16:56.313",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-116231",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1. The impacted element is an unknown function of the component Ser2net. Performing a manipulation of the argument regmsg results in crlf injection. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not",
-            "cve": "CVE-2026-116231",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-26T08:17:17.620",
+            "ts": "2026-10-27T17:16:55.593",
             "fromNVD": true
         },
         {
@@ -114,15 +90,15 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-104351",
+            "title": "CVE-2026-105780",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-104351",
+            "summary": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-105780",
             "score": 9.9,
             "affected": "Adobe",
             "source": "NVD/NIST",
-            "ts": "2026-10-27T17:16:55.593",
+            "ts": "2026-10-27T17:16:56.313",
             "fromNVD": true
         },
         {
@@ -137,6 +113,30 @@
             "score": 9.8,
             "fromKEV": true,
             "ransomware": true
+        },
+        {
+            "title": "CVE-2026-116485",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset. Attackers can send POST requests to /api/env/set, /api/env/add, or /api/env/del to set ADMIN_TOKEN, lock out operators, redirect OTHER_SERVER or PROXY_URL for SSRF, and trigger redeployment.",
+            "cve": "CVE-2026-116485",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-26T14:16:37.040",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-112346",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSoc",
+            "cve": "CVE-2026-112346",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-26T16:17:14.110",
+            "fromNVD": true
         }
     ],
     "docs": "https://livecve.com/livecve/api-docs"
