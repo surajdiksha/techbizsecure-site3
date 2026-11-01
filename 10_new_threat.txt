@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-10-31T01:41:48+00:00",
-    "next_update": "2026-11-01T01:41:48+00:00",
-    "total": 106,
+    "generated_at": "2026-11-01T03:13:06+00:00",
+    "next_update": "2026-11-02T03:13:06+00:00",
+    "total": 114,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 47,
+        "critical_total": 55,
         "kev_total": 1766,
         "sources": [
             "CISA KEV",
@@ -18,15 +18,15 @@
     },
     "threats": [
         {
-            "title": "CVE-2026-116508",
+            "title": "CVE-2026-120189",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A security flaw has been discovered in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this issue is the function sub_402340 of the file infostat.cgi of the component Device-Information CGI. Performing a manipulation of the argument CONTENT_LENGTH results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used f",
-            "cve": "CVE-2026-116508",
+            "summary": "A vulnerability was identified in D-Link DIR-505 1.10B02. Affected is the function save_upload_file/mp_upload_file of the file /usr/bin/tftpd of the component TFTP Upload Filename Handler. The manipulation leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
+            "cve": "CVE-2026-120189",
             "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-10-26T22:16:54.373",
+            "ts": "2026-11-01T01:17:16.877",
             "fromNVD": true
         },
         {
@@ -54,6 +54,18 @@
             "fromNVD": true
         },
         {
+            "title": "CVE-2026-104353",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-104353",
+            "score": 9.9,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-10-27T17:16:55.717",
+            "fromNVD": true
+        },
+        {
             "title": "CVE-2026-116506",
             "severity": "critical",
             "category": "vulnerability",
@@ -78,18 +90,6 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-104353",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-            "cve": "CVE-2026-104353",
-            "score": 9.9,
-            "affected": "Adobe",
-            "source": "NVD/NIST",
-            "ts": "2026-10-27T17:16:55.717",
-            "fromNVD": true
-        },
-        {
             "title": "CVE-2026-105780",
             "severity": "critical",
             "category": "vulnerability",
@@ -99,6 +99,30 @@
             "affected": "Adobe",
             "source": "NVD/NIST",
             "ts": "2026-10-27T17:16:56.313",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-112346",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSoc",
+            "cve": "CVE-2026-112346",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-10-26T16:17:14.110",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-116512",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "The Project Manager – AI Powered Project Management, Task Management, Kanban Board & Time Tracker plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.1.1 via the 'id' parameter parameter. This is due to unsanitized 'id' parameter value concatenated directly into the pipe-delimited validation rule string, which is then split and each token invoked a",
+            "cve": "CVE-2026-116512",
+            "score": 9.8,
+            "affected": "PHP",
+            "source": "NVD/NIST",
+            "ts": "2026-10-31T08:16:48.603",
             "fromNVD": true
         },
         {
@@ -113,30 +137,6 @@
             "score": 9.8,
             "fromKEV": true,
             "ransomware": true
-        },
-        {
-            "title": "CVE-2026-116485",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "danmu_api before 1.21.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to modify server environment configuration when the default TOKEN is used and ADMIN_TOKEN is unset. Attackers can send POST requests to /api/env/set, /api/env/add, or /api/env/del to set ADMIN_TOKEN, lock out operators, redirect OTHER_SERVER or PROXY_URL for SSRF, and trigger redeployment.",
-            "cve": "CVE-2026-116485",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-26T14:16:37.040",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-112346",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSoc",
-            "cve": "CVE-2026-112346",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-10-26T16:17:14.110",
-            "fromNVD": true
         }
     ],
     "docs": "https://livecve.com/livecve/api-docs"
