@@ -1,28 +1,26 @@
 {
     "ok": true,
     "source": "CISA Known Exploited Vulnerabilities Catalog",
-    "fetched_at": "2026-11-03T02:28:11+00:00",
-    "total": 1766,
+    "fetched_at": "2026-11-04T02:56:39+00:00",
+    "total": 1767,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "vulnerabilities": [
         {
-            "cveID": "CVE-2026-111357",
-            "vendorProject": "Ivanti",
-            "product": "Connect Secure",
-            "vulnerabilityName": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-            "dateAdded": "2026-10-30",
-            "shortDescription": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+            "cveID": "CVE-2026-119977",
+            "vendorProject": "WordPress",
+            "product": "WordPress Core",
+            "vulnerabilityName": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+            "dateAdded": "2026-11-03",
+            "shortDescription": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
             "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-            "dueDate": "2026-11-02",
+            "dueDate": "2026-11-06",
             "knownRansomwareCampaignUse": "Unknown",
             "forensicTriage": "Yes",
-            "notes": "https://hub.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935?language=en_US ; https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-urges-patching-newly-exploited-vulnerability-ivanti-connect-secure ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+            "notes": "https://wordpress.org/news/2026/10/wordpress-7-1-4 ; https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-core/wordpress-core-470-713-unauthenticated-upgrade-window-staged-installer-remote-code-execution ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
             "cwes": [
-                "CWE-306",
-                "CWE-862",
-                "CWE-345"
+                "CWE-367"
             ]
         },
         {
@@ -42,19 +40,21 @@
             ]
         },
         {
-            "cveID": "CVE-2026-97229",
-            "vendorProject": "GitLab",
-            "product": "Community Edition and Enterprise Edition",
-            "vulnerabilityName": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-            "dateAdded": "2026-10-29",
-            "shortDescription": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+            "cveID": "CVE-2026-111357",
+            "vendorProject": "Ivanti",
+            "product": "Connect Secure",
+            "vulnerabilityName": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+            "dateAdded": "2026-10-30",
+            "shortDescription": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
             "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-            "dueDate": "2026-11-01",
+            "dueDate": "2026-11-02",
             "knownRansomwareCampaignUse": "Unknown",
             "forensicTriage": "Yes",
-            "notes": "Other products can potentially be affected by the same underlying Ruby/Onigmo Integer Overflow issue in CI/CD Regular Expression Compiler. For more information please see: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves ; https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+            "notes": "https://hub.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935?language=en_US ; https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-urges-patching-newly-exploited-vulnerability-ivanti-connect-secure ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
             "cwes": [
-                "CWE-190"
+                "CWE-306",
+                "CWE-862",
+                "CWE-345"
             ]
         },
         {
@@ -71,6 +71,22 @@
             "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
             "cwes": [
                 "CWE-690"
+            ]
+        },
+        {
+            "cveID": "CVE-2026-97229",
+            "vendorProject": "GitLab",
+            "product": "Community Edition and Enterprise Edition",
+            "vulnerabilityName": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+            "dateAdded": "2026-10-29",
+            "shortDescription": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "dueDate": "2026-11-01",
+            "knownRansomwareCampaignUse": "Unknown",
+            "forensicTriage": "Yes",
+            "notes": "Other products can potentially be affected by the same underlying Ruby/Onigmo Integer Overflow issue in CI/CD Regular Expression Compiler. For more information please see: https://www.ruby-lang.org/en/news/2026/10/23/regexp-fixes-for-gitlab-cves ; https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+            "cwes": [
+                "CWE-190"
             ]
         },
         {
@@ -150,26 +166,6 @@
             "knownRansomwareCampaignUse": "Unknown",
             "forensicTriage": "Yes",
             "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://www.php.net/ ; https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ;  https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
-            "cwes": [
-                "CWE-416",
-                "CWE-755",
-                "CWE-824",
-                "CWE-1325",
-                "CWE-1419"
-            ]
-        },
-        {
-            "cveID": "CVE-2026-109619",
-            "vendorProject": "PHP Group",
-            "product": "PHP",
-            "vulnerabilityName": "PHP Stale Internal Request-State Vulnerability",
-            "dateAdded": "2026-10-26",
-            "shortDescription": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-            "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-            "dueDate": "2026-10-29",
-            "knownRansomwareCampaignUse": "Unknown",
-            "forensicTriage": "Yes",
-            "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://www.php.net/ ; https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ;  https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
             "cwes": [
                 "CWE-416",
                 "CWE-755",
