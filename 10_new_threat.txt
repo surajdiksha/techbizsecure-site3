@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-11-04T02:56:44+00:00",
-    "next_update": "2026-11-05T02:56:44+00:00",
-    "total": 115,
+    "generated_at": "2026-11-05T03:41:59+00:00",
+    "next_update": "2026-11-06T03:41:59+00:00",
+    "total": 134,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 60,
-        "kev_total": 1767,
+        "critical_total": 76,
+        "kev_total": 1768,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -18,15 +18,27 @@
     },
     "threats": [
         {
-            "title": "CVE-2026-121609",
+            "title": "CVE-2026-120276",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A vulnerability was identified in Qihoo 360 Whole Home Router M5 4.0.17.1566. This issue affects the function Home of the file /etc/init.d/mpt of the component Boot Script. The manipulation leads to hard-coded credentials. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in a",
-            "cve": "CVE-2026-121609",
+            "summary": "A weakness has been identified in WAVLINK WN536AX6-A V260507_2.0.0. This vulnerability affects the function sub_416760 of the file /bin/ioos of the component Web Management Interface. This manipulation of the argument group_name causes os command injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor wa",
+            "cve": "CVE-2026-120276",
             "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-04T02:17:20.243",
+            "ts": "2026-11-02T00:18:09.897",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121933",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in Linksys E5350 1.0.00.037. This impacts the function save_settings of the file /wizard/apply.cgi of the component Setup Wizard. Executing a manipulation of the argument wizard_router_pwd can lead to missing authentication. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not res",
+            "cve": "CVE-2026-121933",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-04T20:19:11.607",
             "fromNVD": true
         },
         {
@@ -39,6 +51,54 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-02T00:18:10.810",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-120345",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was found in WAVLINK WN551X3-A M51X3_V251020-WO-182e965. This impacts the function sub_41a430 of the file /bin/ioos of the component DNS Resolution Handler. Performing a manipulation of the argument data results in os command injection. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this discl",
+            "cve": "CVE-2026-120345",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-02T06:17:43.410",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-120195",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4. The impacted element is the function set_wzdgwMesh of the file /cgi-bin/adm.cgi of the component Initial Setup Wizard. The manipulation of the argument wlan_ssid leads to os command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor w",
+            "cve": "CVE-2026-120195",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-01T04:18:46.687",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-120189",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was identified in D-Link DIR-505 1.10B02. Affected is the function save_upload_file/mp_upload_file of the file /usr/bin/tftpd of the component TFTP Upload Filename Handler. The manipulation leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
+            "cve": "CVE-2026-120189",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-01T01:17:16.877",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-120281",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was found in WAVLINK WN536AX6-A V260507. This affects the function strcpy of the file /protocol.csp of the component OpenVPN Handler. The manipulation of the argument openvpn_ip results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
+            "cve": "CVE-2026-120281",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-02T01:17:27.070",
             "fromNVD": true
         },
         {
@@ -66,75 +126,15 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-120189",
+            "title": "CVE-2026-121609",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A vulnerability was identified in D-Link DIR-505 1.10B02. Affected is the function save_upload_file/mp_upload_file of the file /usr/bin/tftpd of the component TFTP Upload Filename Handler. The manipulation leads to stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
-            "cve": "CVE-2026-120189",
+            "summary": "A vulnerability was identified in Qihoo 360 Whole Home Router M5 4.0.17.1566. This issue affects the function Home of the file /etc/init.d/mpt of the component Boot Script. The manipulation leads to hard-coded credentials. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in a",
+            "cve": "CVE-2026-121609",
             "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-01T01:17:16.877",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-120195",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A security vulnerability has been detected in WAVLINK WL-WN579A3-A 2026-03-10-94f93d4. The impacted element is the function set_wzdgwMesh of the file /cgi-bin/adm.cgi of the component Initial Setup Wizard. The manipulation of the argument wlan_ssid leads to os command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor w",
-            "cve": "CVE-2026-120195",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-01T04:18:46.687",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-120276",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A weakness has been identified in WAVLINK WN536AX6-A V260507_2.0.0. This vulnerability affects the function sub_416760 of the file /bin/ioos of the component Web Management Interface. This manipulation of the argument group_name causes os command injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks. The vendor wa",
-            "cve": "CVE-2026-120276",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-02T00:18:09.897",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-120345",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was found in WAVLINK WN551X3-A M51X3_V251020-WO-182e965. This impacts the function sub_41a430 of the file /bin/ioos of the component DNS Resolution Handler. Performing a manipulation of the argument data results in os command injection. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this discl",
-            "cve": "CVE-2026-120345",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-02T06:17:43.410",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-120281",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was found in WAVLINK WN536AX6-A V260507. This affects the function strcpy of the file /protocol.csp of the component OpenVPN Handler. The manipulation of the argument openvpn_ip results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure.",
-            "cve": "CVE-2026-120281",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-02T01:17:27.070",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-120280",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability has been found in WAVLINK WN536AX6-A V260507. The impacted element is the function wireguard_cli_group handler of the file /protocol.csp of the component WireGuard. The manipulation of the argument group_id/group_name leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early abou",
-            "cve": "CVE-2026-120280",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-02T01:17:26.873",
+            "ts": "2026-11-04T02:17:20.243",
             "fromNVD": true
         }
     ],
