@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-11-08T01:46:21+00:00",
-    "next_update": "2026-11-09T01:46:21+00:00",
-    "total": 173,
+    "generated_at": "2026-11-09T03:56:26+00:00",
+    "next_update": "2026-11-10T03:56:26+00:00",
+    "total": 183,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 110,
+        "critical_total": 120,
         "kev_total": 1769,
         "sources": [
             "CISA KEV",
@@ -17,6 +17,18 @@
         ]
     },
     "threats": [
+        {
+            "title": "CVE-2026-109469",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Authorization bypass through user-controlled key in Entra Device Registration allows an unauthorized attacker to elevate privileges over a network.",
+            "cve": "CVE-2026-109469",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-06T23:17:20.557",
+            "fromNVD": true
+        },
         {
             "title": "CVE-2026-121615",
             "severity": "critical",
@@ -27,30 +39,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-04T03:17:14.810",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-121607",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was found in Qihoo 360 D603-2, D600-2, D606-6 and D706 up to 6.4.9. This affects the function testspeed_command of the file /fs2/bin/iscm. Performing a manipulation of the argument host results in os command injection. The attack may be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in",
-            "cve": "CVE-2026-121607",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-04T02:17:19.753",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-121933",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A flaw has been found in Linksys E5350 1.0.00.037. This impacts the function save_settings of the file /wizard/apply.cgi of the component Setup Wizard. Executing a manipulation of the argument wizard_router_pwd can lead to missing authentication. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not res",
-            "cve": "CVE-2026-121933",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-04T20:19:11.607",
             "fromNVD": true
         },
         {
@@ -66,42 +54,6 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-121606",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability has been found in Qihoo 360 D621-2, D603-2, D600-2, D619, D606-6 and D706 up to 6.4.9. Affected by this issue is the function verify_sign of the file fs2/bin/iscm of the component Firmware Signature Verification. Such manipulation of the argument sign leads to improper verification of cryptographic signature. The attack can be launched remotely. The exploit has been disclosed to th",
-            "cve": "CVE-2026-121606",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-04T01:17:23.880",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-121609",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was identified in Qihoo 360 Whole Home Router M5 4.0.17.1566. This issue affects the function Home of the file /etc/init.d/mpt of the component Boot Script. The manipulation leads to hard-coded credentials. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in a",
-            "cve": "CVE-2026-121609",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-04T02:17:20.243",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-109469",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Authorization bypass through user-controlled key in Entra Device Registration allows an unauthorized attacker to elevate privileges over a network.",
-            "cve": "CVE-2026-109469",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-06T23:17:20.557",
-            "fromNVD": true
-        },
-        {
             "title": "CVE-2026-122013",
             "severity": "critical",
             "category": "vulnerability",
@@ -111,6 +63,18 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-04T21:18:07.540",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121933",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in Linksys E5350 1.0.00.037. This impacts the function save_settings of the file /wizard/apply.cgi of the component Setup Wizard. Executing a manipulation of the argument wizard_router_pwd can lead to missing authentication. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not res",
+            "cve": "CVE-2026-121933",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-04T20:19:11.607",
             "fromNVD": true
         },
         {
@@ -126,15 +90,51 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-121600",
+            "title": "CVE-2026-123551",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A flaw has been found in TOTOLINK A950RG 4.1.2cu.5268_B20221104. Affected by this vulnerability is the function setMacFilterRules of the file /cgi-bin/cstecgi.cgi of the component MAC Filter Handler. This manipulation of the argument addEffect causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has been published and may be used.",
-            "cve": "CVE-2026-121600",
-            "score": 9.9,
+            "summary": "OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session tokens from the notification WebSocket. Attackers can bypass the agent-only check through an unvalidated internal forward on legacy Liberty ID-FF endpoints, collecting iPlanetDirectoryPro tokens to hijack user and administrator sessions.",
+            "cve": "CVE-2026-123551",
+            "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-04T01:17:23.647",
+            "ts": "2026-11-08T02:16:46.603",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121609",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was identified in Qihoo 360 Whole Home Router M5 4.0.17.1566. This issue affects the function Home of the file /etc/init.d/mpt of the component Boot Script. The manipulation leads to hard-coded credentials. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in a",
+            "cve": "CVE-2026-121609",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-04T02:17:20.243",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121607",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was found in Qihoo 360 D603-2, D600-2, D606-6 and D706 up to 6.4.9. This affects the function testspeed_command of the file /fs2/bin/iscm. Performing a manipulation of the argument host results in os command injection. The attack may be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in",
+            "cve": "CVE-2026-121607",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-04T02:17:19.753",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121606",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability has been found in Qihoo 360 D621-2, D603-2, D600-2, D619, D606-6 and D706 up to 6.4.9. Affected by this issue is the function verify_sign of the file fs2/bin/iscm of the component Firmware Signature Verification. Such manipulation of the argument sign leads to improper verification of cryptographic signature. The attack can be launched remotely. The exploit has been disclosed to th",
+            "cve": "CVE-2026-121606",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-04T01:17:23.880",
             "fromNVD": true
         }
     ],
