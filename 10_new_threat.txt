@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-11-10T05:06:57+00:00",
-    "next_update": "2026-11-11T05:06:57+00:00",
-    "total": 88,
+    "generated_at": "2026-11-11T02:01:04+00:00",
+    "next_update": "2026-11-12T02:01:04+00:00",
+    "total": 96,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 84,
-        "kev_total": 1773,
+        "critical_total": 90,
+        "kev_total": 1779,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -17,18 +17,6 @@
         ]
     },
     "threats": [
-        {
-            "title": "CVE-2026-89126",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality. Successful exploitation could allow the attacker to execute arbitrary code and fully compromise the system, resulting in a high impact on confident",
-            "cve": "CVE-2026-89126",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-10T01:17:22.420",
-            "fromNVD": true
-        },
         {
             "title": "CVE-2026-89103",
             "severity": "critical",
@@ -51,6 +39,66 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-06T23:17:20.557",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121352",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Adobe Connect is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could exploit this vulnerability to gain unauthorized access to sensitive resources. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-121352",
+            "score": 10,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-11-10T22:18:25.060",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121353",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Adobe Connect is affected by an Improper Neutralization of CRLF Sequences ('CRLF Injection') vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-121353",
+            "score": 10,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-11-10T22:18:25.217",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121356",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Adobe Connect is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-121356",
+            "score": 10,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-11-10T22:18:25.637",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121889",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Adobe Connect is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-121889",
+            "score": 10,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-11-10T22:18:26.180",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-121351",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Adobe Connect is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files and directories outside the intended access scope. Exploitation of this issue does not require user interaction. Scope is changed.",
+            "cve": "CVE-2026-121351",
+            "score": 10,
+            "affected": "Adobe",
+            "source": "NVD/NIST",
+            "ts": "2026-11-10T22:18:24.910",
             "fromNVD": true
         },
         {
@@ -78,18 +126,6 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-120017",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication assertions under certain configurations. An unauthenticated attacker could submit specially crafted data to bypass authentication and impersonate arbitrary users, including privileged accounts. Successful exploitation could cause a full system compromise, with the impact potentially extendin",
-            "cve": "CVE-2026-120017",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-10T01:17:16.803",
-            "fromNVD": true
-        },
-        {
             "title": "CVE-2026-123551",
             "severity": "critical",
             "category": "vulnerability",
@@ -99,42 +135,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-08T02:16:46.603",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-124580",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This impacts the function handle_wechat_cn_wifi of the file var/html/webserver of the component Weixin Auth Endpoint. The manipulation of the argument extend results in os command injection. The attack can be executed remotely. The exploit has been made public and could be used. The vendor was",
-            "cve": "CVE-2026-124580",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-09T08:17:02.923",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-17336",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command.",
-            "cve": "CVE-2026-17336",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-07T05:18:44.673",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-17410",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to access and modify other tenants' portal data due to improper neutralization of argument delimiters.",
-            "cve": "CVE-2026-17410",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-07T05:18:58.410",
             "fromNVD": true
         }
     ],
