@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-11-12T02:46:13+00:00",
-    "next_update": "2026-11-13T02:46:13+00:00",
-    "total": 131,
+    "generated_at": "2026-11-13T03:01:10+00:00",
+    "next_update": "2026-11-14T03:01:10+00:00",
+    "total": 109,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 71,
+        "critical_total": 55,
         "kev_total": 1779,
         "sources": [
             "CISA KEV",
@@ -17,6 +17,18 @@
         ]
     },
     "threats": [
+        {
+            "title": "CVE-2026-127277",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A security flaw has been discovered in Linksys EA8100 1.0.3.216940. The affected element is an unknown function of the file etc/init.d/service_smbd.sh of the component SMB Service. Performing a manipulation of the argument ANON_ACCESS results in improper initialization. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was con",
+            "cve": "CVE-2026-127277",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-13T02:18:54.520",
+            "fromNVD": true
+        },
         {
             "title": "CVE-2026-125086",
             "severity": "critical",
@@ -27,6 +39,18 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-10T01:17:19.640",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-127275",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was determined in Linksys EA8100 1.0.3.216940. This issue affects the function SetRemoteSetting/SetUnsecuredWiFiWarning of the file ui_server.lua of the component JNAP API. This manipulation of the argument isEnabled/enabled causes missing authentication. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized. The vendor was cont",
+            "cve": "CVE-2026-127275",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-13T00:20:14.083",
             "fromNVD": true
         },
         {
@@ -42,75 +66,39 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-124580",
+            "title": "CVE-2026-17117",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This impacts the function handle_wechat_cn_wifi of the file var/html/webserver of the component Weixin Auth Endpoint. The manipulation of the argument extend results in os command injection. The attack can be executed remotely. The exploit has been made public and could be used. The vendor was",
-            "cve": "CVE-2026-124580",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-09T08:17:02.923",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-124450",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials and write arbitrary files as the web user, enabling remote code execution.",
-            "cve": "CVE-2026-124450",
-            "score": 9.9,
-            "affected": "PHP",
-            "source": "NVD/NIST",
-            "ts": "2026-11-08T14:18:12.260",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-110697",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A flaw was found in Quay where the robot account listing function constructs a SQL LIKE pattern from user-controlled namespace names without escaping wildcard metacharacters. An attacker who creates a namespace containing an underscore character can match and retrieve robot accounts and their decrypted authentication tokens from other tenants' namespaces, leading to cross-tenant credential theft a",
-            "cve": "CVE-2026-110697",
+            "summary": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to improperly controlled modification of object attributes. A user could set a field that should only be controlled by the system, which could lead to code execution.",
+            "cve": "CVE-2026-17117",
             "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-11T17:17:14.897",
+            "ts": "2026-11-07T05:18:25.647",
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-17410",
+            "title": "CVE-2026-17132",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to access and modify other tenants' portal data due to improper neutralization of argument delimiters.",
-            "cve": "CVE-2026-17410",
+            "summary": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command.",
+            "cve": "CVE-2026-17132",
             "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-07T05:18:58.410",
+            "ts": "2026-11-07T05:18:26.430",
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-124585",
+            "title": "CVE-2026-17134",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This issue affects the function add_expmac of the file var/html/webserver of the component Web Administration Interface. The manipulation of the argument mac results in os command injection. The attack may be performed from remote. The exploit has been made public and could be used. The vendor",
-            "cve": "CVE-2026-124585",
+            "summary": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to SQL injection.",
+            "cve": "CVE-2026-17134",
             "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-09T09:16:59.517",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-17239",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to a path traversal vulnerability.",
-            "cve": "CVE-2026-17239",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-07T05:18:32.657",
+            "ts": "2026-11-07T05:18:26.630",
             "fromNVD": true
         },
         {
@@ -126,15 +114,27 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-107331",
+            "title": "CVE-2026-17239",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
-            "cve": "CVE-2026-107331",
+            "summary": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to a path traversal vulnerability.",
+            "cve": "CVE-2026-17239",
             "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-08T17:16:35.550",
+            "ts": "2026-11-07T05:18:32.657",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-120002",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
+            "cve": "CVE-2026-120002",
+            "score": 9.9,
+            "affected": "Microsoft",
+            "source": "NVD/NIST",
+            "ts": "2026-11-10T19:20:26.080",
             "fromNVD": true
         }
     ],
