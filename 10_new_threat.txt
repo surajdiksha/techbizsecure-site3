@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-11-14T03:51:07+00:00",
-    "next_update": "2026-11-15T03:51:07+00:00",
-    "total": 48,
+    "generated_at": "2026-11-15T05:25:47+00:00",
+    "next_update": "2026-11-16T05:25:47+00:00",
+    "total": 54,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 42,
+        "critical_total": 50,
         "kev_total": 1781,
         "sources": [
             "CISA KEV",
@@ -17,6 +17,30 @@
         ]
     },
     "threats": [
+        {
+            "title": "CVE-2026-129354",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A flaw has been found in D-Link DIR-600L 2.17b02. Affected by this issue is the function hnap_main of the file htdocs/cgibin of the component HNAP Handler. Executing a manipulation can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been published and may be used.",
+            "cve": "CVE-2026-129354",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-15T01:18:03.043",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-129353",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was detected in D-Link DIR-600L 2.17/2.17b02. Affected by this vulnerability is the function authenticationcgi_main of the file authentication.cgi. Performing a manipulation of the argument id/password results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is now public and may be used.",
+            "cve": "CVE-2026-129353",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-15T00:16:51.120",
+            "fromNVD": true
+        },
         {
             "title": "CVE-2026-127277",
             "severity": "critical",
@@ -27,6 +51,30 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-13T02:18:54.520",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-129351",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A security vulnerability has been detected in TRENDnet TEW-657BRM 1.00.1. This vulnerability affects the function sprintf of the file /setup.cgi of the component mini_httpd. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The vendor explains: \"\"I am not able to confirm if such vulnerability exists as the ",
+            "cve": "CVE-2026-129351",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-14T23:16:47.753",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-129433",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Dokploy before 0.31.1 contains an OS command injection vulnerability in getComposeContainerCommand() that allows authenticated organization members to execute shell commands via the serviceName parameter. Attackers can store serviceName values with shell metacharacters through backup.create or backup.update tRPC procedures, executing commands as root when scheduled backups run and taking over the ",
+            "cve": "CVE-2026-129433",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-14T13:17:22.820",
             "fromNVD": true
         },
         {
@@ -42,15 +90,27 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-129171",
+            "title": "CVE-2026-129250",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "NginxPulse 1.5.0 before 1.6.26 contains an unauthenticated sql injection vulnerability that allows remote attackers to append SQL via the id and locationType parameters of /api/stats/:type. Attackers can close the quoted table-name identifier and use error-based output to read database contents, and read or write server files via PostgreSQL superuser functions.",
-            "cve": "CVE-2026-129171",
-            "score": 9.8,
-            "affected": "Nginx",
+            "summary": "A security vulnerability has been detected in Edimax BR6478ACV2 1.23. The impacted element is the function formPPTPSetup of the file webs. The manipulation of the argument pptpUserName leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+            "cve": "CVE-2026-129250",
+            "score": 9.9,
+            "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-13T18:17:42.530",
+            "ts": "2026-11-14T12:17:44.240",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-129110",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "sysPass 3.0.1 through 3.2.11 contains an authentication bypass vulnerability that allows unauthenticated attackers to reinstall an already-installed instance by POSTing to the install/install handler, which never checks isInstalled(). Attackers can overwrite config.xml, point the application at an attacker-controlled database, create an administrator account, and plant serialized PublicLink gadget",
+            "cve": "CVE-2026-129110",
+            "score": 9.8,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-13T16:19:00.543",
             "fromNVD": true
         },
         {
@@ -67,30 +127,6 @@
             "ransomware": true
         },
         {
-            "title": "CVE-2026-126542",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "WWBN AVideo 6.5 through 29.7.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user via Hybridauth social login display names. Attackers can set their X, Facebook, Yahoo or LinkedIn display name to a victim's username and withhold email, causing login.json.php or oauth2.php to log them in as that account, including administrators, without a pa",
-            "cve": "CVE-2026-126542",
-            "score": 9.8,
-            "affected": "PHP",
-            "source": "NVD/NIST",
-            "ts": "2026-11-11T01:17:15.547",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-126797",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability in ns-admin that allows unauthenticated attackers to forge administrator tokens using a hardcoded JWT signing key. Attackers can sign an HS256 X-Access-Token carrying the public super administrator role ID to gain full access to user management, scan tasks and stored vulnerability results.",
-            "cve": "CVE-2026-126797",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-11T21:16:43.027",
-            "fromNVD": true
-        },
-        {
             "title": "CVE-2026-76954",
             "severity": "critical",
             "category": "vulnerability",
@@ -100,42 +136,6 @@
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
             "ts": "2026-11-12T04:17:20.407",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-82504",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "VITEC EZ TV Platform Server before 8.5.0 contains an unrestricted file upload vulnerability in the upload handler that allows unauthenticated remote attackers to upload arbitrary files by supplying a target filename in the X-FILENAME request header with no authentication or file type validation required. Attackers can upload a malicious ASPX file directly to the web-accessible uploads directory, w",
-            "cve": "CVE-2026-82504",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-13T21:17:48.030",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-129110",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "sysPass 3.0.1 through 3.2.11 contains an authentication bypass vulnerability that allows unauthenticated attackers to reinstall an already-installed instance by POSTing to the install/install handler, which never checks isInstalled(). Attackers can overwrite config.xml, point the application at an attacker-controlled database, create an administrator account, and plant serialized PublicLink gadget",
-            "cve": "CVE-2026-129110",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-13T16:19:00.543",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-63079",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "RBH Access Technologies Integra32 Security Management System 5.1.11 R5.0 contains an unauthenticated deserialization vulnerability in its deprecated .NET Remoting service, exposed on TCP port 2001 via the AxcvcLt.dll library using BinaryServerFormatterSinkProvider at TypeFilterLevel.Full without requiring authentication. A remote unauthenticated attacker can send a malicious serialized gadget payl",
-            "cve": "CVE-2026-63079",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-13T16:19:30.253",
             "fromNVD": true
         }
     ],
