@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-11-15T05:25:47+00:00",
-    "next_update": "2026-11-16T05:25:47+00:00",
-    "total": 54,
+    "generated_at": "2026-11-16T01:51:07+00:00",
+    "next_update": "2026-11-17T01:51:07+00:00",
+    "total": 61,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 50,
+        "critical_total": 57,
         "kev_total": 1781,
         "sources": [
             "CISA KEV",
@@ -17,6 +17,18 @@
         ]
     },
     "threats": [
+        {
+            "title": "CVE-2026-129444",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A vulnerability was identified in D-Link DSL-6740C 20131126. This affects an unknown function of the file /etc/templates/ftpd/ftpd_conf.php of the component FTP Daemon. Such manipulation leads to hard-coded credentials. The attack can be executed remotely. The exploit is publicly available and might be used.",
+            "cve": "CVE-2026-129444",
+            "score": 10,
+            "affected": "PHP",
+            "source": "NVD/NIST",
+            "ts": "2026-11-15T09:16:44.570",
+            "fromNVD": true
+        },
         {
             "title": "CVE-2026-129354",
             "severity": "critical",
@@ -42,18 +54,6 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-127277",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A security flaw has been discovered in Linksys EA8100 1.0.3.216940. The affected element is an unknown function of the file etc/init.d/service_smbd.sh of the component SMB Service. Performing a manipulation of the argument ANON_ACCESS results in improper initialization. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was con",
-            "cve": "CVE-2026-127277",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-13T02:18:54.520",
-            "fromNVD": true
-        },
-        {
             "title": "CVE-2026-129351",
             "severity": "critical",
             "category": "vulnerability",
@@ -66,15 +66,15 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-129433",
+            "title": "CVE-2026-127277",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "Dokploy before 0.31.1 contains an OS command injection vulnerability in getComposeContainerCommand() that allows authenticated organization members to execute shell commands via the serviceName parameter. Attackers can store serviceName values with shell metacharacters through backup.create or backup.update tRPC procedures, executing commands as root when scheduled backups run and taking over the ",
-            "cve": "CVE-2026-129433",
-            "score": 9.9,
+            "summary": "A security flaw has been discovered in Linksys EA8100 1.0.3.216940. The affected element is an unknown function of the file etc/init.d/service_smbd.sh of the component SMB Service. Performing a manipulation of the argument ANON_ACCESS results in improper initialization. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was con",
+            "cve": "CVE-2026-127277",
+            "score": 10,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-14T13:17:22.820",
+            "ts": "2026-11-13T02:18:54.520",
             "fromNVD": true
         },
         {
@@ -90,52 +90,51 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-129250",
+            "title": "CVE-2026-129433",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "A security vulnerability has been detected in Edimax BR6478ACV2 1.23. The impacted element is the function formPPTPSetup of the file webs. The manipulation of the argument pptpUserName leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-            "cve": "CVE-2026-129250",
+            "summary": "Dokploy before 0.31.1 contains an OS command injection vulnerability in getComposeContainerCommand() that allows authenticated organization members to execute shell commands via the serviceName parameter. Attackers can store serviceName values with shell metacharacters through backup.create or backup.update tRPC procedures, executing commands as root when scheduled backups run and taking over the ",
+            "cve": "CVE-2026-129433",
             "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-14T12:17:44.240",
+            "ts": "2026-11-14T13:17:22.820",
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-129110",
+            "title": "CVE-2026-129451",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "sysPass 3.0.1 through 3.2.11 contains an authentication bypass vulnerability that allows unauthenticated attackers to reinstall an already-installed instance by POSTing to the install/install handler, which never checks isInstalled(). Attackers can overwrite config.xml, point the application at an attacker-controlled database, create an administrator account, and plant serialized PublicLink gadget",
-            "cve": "CVE-2026-129110",
-            "score": 9.8,
+            "summary": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function app_guest_export of the file /cgi-bin/mainfunction.cgi. This manipulation of the argument filename causes path traversal. The attack can be initiated remotely. The exploit has been published and may be used. Upgrading to version 1.5.1.7 is able to mitigate this issue. The affected component should be upgraded. The ",
+            "cve": "CVE-2026-129451",
+            "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-13T16:19:00.543",
+            "ts": "2026-11-15T13:16:58.600",
             "fromNVD": true
         },
         {
-            "title": "Cl0p MOVEit Data Extortion",
-            "severity": "critical",
-            "category": "ransomware",
-            "summary": "Cl0p continues extorting organizations via MOVEit Transfer exploitation, with 2,700+ confirmed victims. Data leak sites remain active.",
-            "cve": "CVE-2023-34362",
-            "affected": "MOVEit Transfer / GoAnywhere",
-            "source": "Mandiant",
-            "ts": "Active 2025",
-            "score": 9.8,
-            "fromKEV": true,
-            "ransomware": true
-        },
-        {
-            "title": "CVE-2026-76954",
+            "title": "CVE-2026-129450",
             "severity": "critical",
             "category": "vulnerability",
-            "summary": "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attackers to read or write arbitrary files and conduct denial-of-service attacks.",
-            "cve": "CVE-2026-76954",
-            "score": 9.8,
+            "summary": "A vulnerability was detected in DrayTek Vigor2960 1.5.1.6. Affected by this issue is the function sub_1E084 of the file /cgi-bin/mainfunction.cgi?action=doWebBackup. The manipulation of the argument option results in path traversal. It is possible to launch the attack remotely. The exploit is now public and may be used. Upgrading to version 1.5.1.7 can resolve this issue. You should upgrade the af",
+            "cve": "CVE-2026-129450",
+            "score": 9.9,
             "affected": "Multiple platforms",
             "source": "NVD/NIST",
-            "ts": "2026-11-12T04:17:20.407",
+            "ts": "2026-11-15T12:17:20.913",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-129449",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A security vulnerability has been detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this vulnerability is the function sub_14914 of the file /cgi-bin/mainfunction.cgi. The manipulation of the argument swmconfigupload leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. Upgrading to version 1.5.1.7 addresses this",
+            "cve": "CVE-2026-129449",
+            "score": 9.9,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-15T11:17:10.620",
             "fromNVD": true
         }
     ],
