@@ -1,13 +1,13 @@
 {
     "ok": true,
-    "generated_at": "2026-11-17T02:31:42+00:00",
-    "next_update": "2026-11-18T02:31:42+00:00",
+    "generated_at": "2026-11-18T02:58:45+00:00",
+    "next_update": "2026-11-19T02:58:45+00:00",
     "summary": {
-        "total_threats": 109,
-        "critical": 46,
-        "high": 62,
-        "cves_tracked": 102,
-        "kev_total": 1781,
+        "total_threats": 118,
+        "critical": 60,
+        "high": 57,
+        "cves_tracked": 111,
+        "kev_total": 1782,
         "kev_ransomware": 361,
         "sources": [
             "CISA KEV",
@@ -16,12 +16,6 @@
         ]
     },
     "history_30d": {
-        "2026-10-19": {
-            "total": 103,
-            "critical": 38,
-            "kev": 1748,
-            "ran_at": "2026-10-19T18:30:16+00:00"
-        },
         "2026-10-20": {
             "total": 91,
             "critical": 36,
@@ -191,10 +185,16 @@
             "ran_at": "2026-11-16T20:14:30+00:00"
         },
         "2026-11-17": {
-            "total": 109,
-            "critical": 46,
-            "kev": 1781,
-            "ran_at": "2026-11-17T02:31:42+00:00"
+            "total": 105,
+            "critical": 42,
+            "kev": 1782,
+            "ran_at": "2026-11-17T20:49:19+00:00"
+        },
+        "2026-11-18": {
+            "total": 118,
+            "critical": 60,
+            "kev": 1782,
+            "ran_at": "2026-11-18T02:58:46+00:00"
         }
     }
 }
