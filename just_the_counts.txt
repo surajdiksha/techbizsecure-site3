@@ -1,12 +1,12 @@
 {
     "ok": true,
-    "generated_at": "2026-11-21T04:49:26+00:00",
-    "next_update": "2026-11-22T04:49:26+00:00",
+    "generated_at": "2026-11-22T05:55:51+00:00",
+    "next_update": "2026-11-23T05:55:51+00:00",
     "summary": {
-        "total_threats": 73,
-        "critical": 30,
-        "high": 42,
-        "cves_tracked": 66,
+        "total_threats": 97,
+        "critical": 33,
+        "high": 63,
+        "cves_tracked": 90,
         "kev_total": 1790,
         "kev_ransomware": 361,
         "sources": [
@@ -16,12 +16,6 @@
         ]
     },
     "history_30d": {
-        "2026-10-23": {
-            "total": 87,
-            "critical": 24,
-            "kev": 1756,
-            "ran_at": "2026-10-23T22:29:53+00:00"
-        },
         "2026-10-24": {
             "total": 145,
             "critical": 80,
@@ -191,10 +185,16 @@
             "ran_at": "2026-11-20T22:18:37+00:00"
         },
         "2026-11-21": {
-            "total": 73,
-            "critical": 30,
+            "total": 97,
+            "critical": 33,
             "kev": 1790,
-            "ran_at": "2026-11-21T04:49:26+00:00"
+            "ran_at": "2026-11-21T23:29:28+00:00"
+        },
+        "2026-11-22": {
+            "total": 97,
+            "critical": 33,
+            "kev": 1790,
+            "ran_at": "2026-11-22T05:55:51+00:00"
         }
     }
 }
