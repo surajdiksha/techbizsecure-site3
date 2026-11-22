@@ -1,14 +1,14 @@
 {
     "ok": true,
-    "generated_at": "2026-11-21T04:49:26+00:00",
-    "next_update": "2026-11-22T04:49:26+00:00",
-    "total": 73,
+    "generated_at": "2026-11-22T05:55:51+00:00",
+    "next_update": "2026-11-23T05:55:51+00:00",
+    "total": 97,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 30,
+        "critical_total": 33,
         "kev_total": 1790,
         "sources": [
             "CISA KEV",
@@ -17,6 +17,18 @@
         ]
     },
     "threats": [
+        {
+            "title": "CVE-2026-133993",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.",
+            "cve": "CVE-2026-133993",
+            "score": 10,
+            "affected": "Multiple platforms",
+            "source": "NVD/NIST",
+            "ts": "2026-11-21T18:16:54.277",
+            "fromNVD": true
+        },
         {
             "title": "CVE-2026-130778",
             "severity": "critical",
@@ -54,18 +66,6 @@
             "fromNVD": true
         },
         {
-            "title": "CVE-2026-130754",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "All versions of LaraDashboard contain an authentication bypass in SocialAuthService::findOrCreateUser(), which links a social login to an existing account by email without checking that the OAuth provider verified that email. Unauthenticated attackers using an OAuth/OIDC provider that asserts a victim's email can log in as any user, including Superadmin, and keep persistent access through a linked",
-            "cve": "CVE-2026-130754",
-            "score": 9.8,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-18T19:17:45.940",
-            "fromNVD": true
-        },
-        {
             "title": "Cl0p MOVEit Data Extortion",
             "severity": "critical",
             "category": "ransomware",
@@ -77,6 +77,42 @@
             "score": 9.8,
             "fromKEV": true,
             "ransomware": true
+        },
+        {
+            "title": "CVE-2026-120539",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string and evaluating it with eval(). Because PHP interpolates double-quoted strings, a payload of the form {${...}} in the URL path is executed dur",
+            "cve": "CVE-2026-120539",
+            "score": 9.8,
+            "affected": "PHP",
+            "source": "NVD/NIST",
+            "ts": "2026-11-21T06:16:33.227",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-125294",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.10 via the `tpgb_ajax_register_user()` function. This is due to a byte-level denylist on the `tpgb_acf_key[]` and `tpgb_acf[]` parameters that fails to block Unicode look-alike characters — such as U+1E87 and U+00E7 in a key like `ẇp_çapabilities` — whose UTF-8 byte seq",
+            "cve": "CVE-2026-125294",
+            "score": 9.8,
+            "affected": "WordPress",
+            "source": "NVD/NIST",
+            "ts": "2026-11-21T19:16:31.403",
+            "fromNVD": true
+        },
+        {
+            "title": "CVE-2026-134292",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where the surrealdb.functions bridge calls the internal fnc::synchronous() and fnc::asynchronous() dispatchers without enforcing function capability checks. Authenticated users denied access to built-in functions in SurrealQL can execute them by calling them through surrealdb.functions from",
+            "cve": "CVE-2026-134292",
+            "score": 9.8,
+            "affected": "Java",
+            "source": "NVD/NIST",
+            "ts": "2026-11-21T17:16:48.897",
+            "fromNVD": true
         },
         {
             "title": "Salt Typhoon Telecom Breach",
@@ -101,43 +137,7 @@
             "ts": "Ongoing 2025",
             "score": 9.4,
             "fromKEV": false
-        },
-        {
-            "title": "LockBit 4.0 Ransomware",
-            "severity": "critical",
-            "category": "ransomware",
-            "summary": "LockBit relaunched after law enforcement disruption with improved Linux/ESXi encryptors and active affiliate recruitment targeting healthcare and finance.",
-            "cve": null,
-            "affected": "Windows / Linux / VMware ESXi",
-            "source": "NCA / Europol",
-            "ts": "Active 2025",
-            "score": 9.1,
-            "fromKEV": false
-        },
-        {
-            "title": "CVE-2026-133500",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was identified in Gladys Assistant up to 4.71.0. This affects an unknown function of the file gateway.downloadBackup.js of the component Backup Restore Endpoint. The manipulation of the argument file_url leads to os command injection. The attack can be initiated remotely. The exploit is publicly available and might be used. Upgrading to version 4.72.0 mitigates this issue. Upgradin",
-            "cve": "CVE-2026-133500",
-            "score": 9.1,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-20T09:20:07.047",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-132142",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function dataflowstatus of the file /cgi-bin/mainfunction.cgi of the component CGI Process. This manipulation of the argument option causes stack-based buffer overflow. The attack can be initiated remotely. The exploit has been published and may be used. Upgrading to version 1.5.1.7 is able to mitigate this issue. You shoul",
-            "cve": "CVE-2026-132142",
-            "score": 9.1,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-18T22:17:20.160",
-            "fromNVD": true
         }
     ],
-    "docs": "https://livecve.com/livecve/api-docs"
+    "docs": "https://livecve.com/api-docs"
 }
