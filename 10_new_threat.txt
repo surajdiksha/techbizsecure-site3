@@ -1,15 +1,15 @@
 {
     "ok": true,
-    "generated_at": "2026-11-23T06:45:56+00:00",
-    "next_update": "2026-11-24T06:45:56+00:00",
-    "total": 97,
+    "generated_at": "2026-11-24T07:01:04+00:00",
+    "next_update": "2026-11-25T07:01:04+00:00",
+    "total": 88,
     "returned": 10,
     "offset": 0,
     "limit": 10,
     "filters": [],
     "meta": {
-        "critical_total": 33,
-        "kev_total": 1790,
+        "critical_total": 24,
+        "kev_total": 1792,
         "sources": [
             "CISA KEV",
             "NVD/NIST",
@@ -17,54 +17,6 @@
         ]
     },
     "threats": [
-        {
-            "title": "CVE-2026-133993",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.",
-            "cve": "CVE-2026-133993",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-21T18:16:54.277",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-130778",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Incus before 7.6.0 contains an authentication bypass vulnerability that allows remote attackers to authenticate as any trusted certificate by appending its public certificate to their presented TLS client chain. Attackers can append the server's or a cluster member's certificate to gain cluster-level access, bypass authorization, modify trust store entries, and influence scriptlet-based authorizat",
-            "cve": "CVE-2026-130778",
-            "score": 10,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-18T19:17:53.607",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-130786",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "Incus before 7.6.0 contains a configuration injection vulnerability that allows users who can launch instances from controlled images to inject LXC directives by embedding line breaks in OCI config.json values or oci.entrypoint and oci.cwd keys. Attackers can add liblxc hooks or crafted tmpfs lxc.mount.entry fields to run commands as root on the host or bind-mount host paths, even from restricted ",
-            "cve": "CVE-2026-130786",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-18T19:17:55.157",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-133680",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
-            "cve": "CVE-2026-133680",
-            "score": 9.9,
-            "affected": "Multiple platforms",
-            "source": "NVD/NIST",
-            "ts": "2026-11-20T20:17:35.750",
-            "fromNVD": true
-        },
         {
             "title": "Cl0p MOVEit Data Extortion",
             "severity": "critical",
@@ -77,42 +29,6 @@
             "score": 9.8,
             "fromKEV": true,
             "ransomware": true
-        },
-        {
-            "title": "CVE-2026-120539",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string and evaluating it with eval(). Because PHP interpolates double-quoted strings, a payload of the form {${...}} in the URL path is executed dur",
-            "cve": "CVE-2026-120539",
-            "score": 9.8,
-            "affected": "PHP",
-            "source": "NVD/NIST",
-            "ts": "2026-11-21T06:16:33.227",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-125294",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.10 via the `tpgb_ajax_register_user()` function. This is due to a byte-level denylist on the `tpgb_acf_key[]` and `tpgb_acf[]` parameters that fails to block Unicode look-alike characters — such as U+1E87 and U+00E7 in a key like `ẇp_çapabilities` — whose UTF-8 byte seq",
-            "cve": "CVE-2026-125294",
-            "score": 9.8,
-            "affected": "WordPress",
-            "source": "NVD/NIST",
-            "ts": "2026-11-21T19:16:31.403",
-            "fromNVD": true
-        },
-        {
-            "title": "CVE-2026-134292",
-            "severity": "critical",
-            "category": "vulnerability",
-            "summary": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where the surrealdb.functions bridge calls the internal fnc::synchronous() and fnc::asynchronous() dispatchers without enforcing function capability checks. Authenticated users denied access to built-in functions in SurrealQL can execute them by calling them through surrealdb.functions from",
-            "cve": "CVE-2026-134292",
-            "score": 9.8,
-            "affected": "Java",
-            "source": "NVD/NIST",
-            "ts": "2026-11-21T17:16:48.897",
-            "fromNVD": true
         },
         {
             "title": "Salt Typhoon Telecom Breach",
@@ -137,7 +53,97 @@
             "ts": "Ongoing 2025",
             "score": 9.4,
             "fromKEV": false
+        },
+        {
+            "title": "LockBit 4.0 Ransomware",
+            "severity": "critical",
+            "category": "ransomware",
+            "summary": "LockBit relaunched after law enforcement disruption with improved Linux/ESXi encryptors and active affiliate recruitment targeting healthcare and finance.",
+            "cve": null,
+            "affected": "Windows / Linux / VMware ESXi",
+            "source": "NCA / Europol",
+            "ts": "Active 2025",
+            "score": 9.1,
+            "fromKEV": false
+        },
+        {
+            "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "cve": "CVE-2026-90817",
+            "affected": "Vanderbilt University Research Electronic Data Capture (REDCap)",
+            "source": "CISA KEV",
+            "ts": "2026-11-18",
+            "dueDate": "2026-11-21",
+            "ransomware": false,
+            "fromKEV": true
+        },
+        {
+            "title": "Project MONAI MONAI Label Path Traversal Vulnerability",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "cve": "CVE-2026-133968",
+            "affected": "Project MONAI MONAI Label",
+            "source": "CISA KEV",
+            "ts": "2026-11-23",
+            "dueDate": "2026-11-26",
+            "ransomware": false,
+            "fromKEV": true
+        },
+        {
+            "title": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "cve": "CVE-2026-134624",
+            "affected": "N-able MailAssure",
+            "source": "CISA KEV",
+            "ts": "2026-11-23",
+            "dueDate": "2026-11-26",
+            "ransomware": false,
+            "fromKEV": true
+        },
+        {
+            "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "cve": "CVE-2026-129448",
+            "affected": "Apache Roller",
+            "source": "CISA KEV",
+            "ts": "2026-11-20",
+            "dueDate": "2026-11-23",
+            "ransomware": false,
+            "fromKEV": true
+        },
+        {
+            "title": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines",
+            "cve": "CVE-2026-123890",
+            "affected": "Broadcom VMware vCenter",
+            "source": "CISA KEV",
+            "ts": "2026-11-20",
+            "dueDate": "2026-11-23",
+            "ransomware": false,
+            "fromKEV": true
+        },
+        {
+            "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+            "severity": "critical",
+            "category": "vulnerability",
+            "summary": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+            "cve": "CVE-2025-42884",
+            "affected": "SAP NetWeaver",
+            "source": "CISA KEV",
+            "ts": "2026-11-20",
+            "dueDate": "2026-11-23",
+            "ransomware": false,
+            "fromKEV": true
         }
     ],
-    "docs": "https://livecve.com/api-docs"
+    "docs": "https://livecve.com/livecve/api-docs"
 }
